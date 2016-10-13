@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Converter Title = "Philips2UIH_DTI">
+      <ADD>
+           <Tag ID="0x00651037" VR="FD" ReferenceTagID="0x00189089" ReferenceTagVR="SH" />  <!--根据另一个tag填写一个tag -->
+           <Tag ID="0x0065102B" VR="LT" Value="DTI_Func" />   <!--为一个tag赋固定值 -->
+      </ADD>
+      <DELETE>
+           <!-- <Tag ID="0x00321060"/> -->  <!--删除tag --> 
+           <!-- <Tag ID="0x00080071"/>   -->
+      </DELETE>
+      <MODIFY>
+           <!-- <Tag ID="0x00080020" VR="DA" Value="20160806"/>   -->
+           <Tag ID="0x00080070" VR="LO" Value="UIH"/>
+      </MODIFY>
+      <CUSTOMIZED>   <!-- 自定义的转换 -->
+           <ModuleName>dti_philips2uih</ModuleName>
+           <FunctionName>DTIPhilips2UIH</FunctionName>
+      </CUSTOMIZED>
+</Converter>
