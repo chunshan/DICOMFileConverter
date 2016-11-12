@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Converter Title = "Siemens2UIH_MRS">
+      <ADD>
+           <Tag ID="0x00189100" VR="CS" Value="1H" />   <!-- -->
+      </ADD>
+      <DELETE>
+           <!-- <Tag ID="0x00321060"/> -->  <!-- --> 
+           <!-- <Tag ID="0x00080071"/>   -->
+      </DELETE>
+      <MODIFY>
+           <Tag ID="0x00080070" VR="LO" Value="UIH"/>  <!-- Manufacturer-->
+           <Tag ID="0x00080016" VR="UI" Value="1.2.840.10008.5.1.4.1.1.4.2"/>   <!-- SOP Class UID-->
+      </MODIFY>
+      <CUSTOMIZED>   <!--  -->
+           <ModuleName>siemens2uih_mrs</ModuleName>
+           <FunctionName>MRSSiemens2UIH</FunctionName>
+      </CUSTOMIZED>
+</Converter>
