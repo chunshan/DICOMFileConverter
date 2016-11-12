@@ -40,6 +40,9 @@ def GetFileList(find_path, flag_str = []):
             return file_list
 
         logging.debug("%s is a dir." % find_path)
+        if not find_path.endswith("/"):
+            find_path = find_path + "/"
+
         file_names = os.listdir(find_path)
         if (len(file_names) > 0):
             for fn in file_names:
@@ -61,6 +64,46 @@ def GetFileList(find_path, flag_str = []):
     except Exception, e:
         logging.error("errors happen in GetFileList")
 
+def GetFileListRecursively(find_path, flag_str = []): 
+    """ 
+    #递归地获取目录中及其子目录中指定的文件名 
+     #>>>flag_str=['F','EMS','txt'] #要求文件名称中包含这些字符 
+     #>>>file_list = Getfile_list(find_path, flag_str) # 
+    """
+    try:
+        file_list = []
+        if os.path.isfile(find_path):
+            logging.debug("%s is a file." % find_path)
+            path_filename = os.path.split(find_path)
+            if len(flag_str) > 0:
+                if IsSubString(flag_str, path_filename[1]):
+                    file_list.append(find_path)
+                    return file_list
+                else:
+                    return []
+            else:
+                file_list.append(find_path)
+                return file_list
+
+        logging.debug("%s is a dir." % find_path)
+        if not find_path.endswith("/"):
+            find_path = find_path + "/"
+
+        dir_or_files = os.listdir(find_path)
+        if len(dir_or_files) > 0:
+            for dir_file in dir_or_files:
+                full_path = os.path.join(find_path, dir_file)
+                temp_file_list = GetFileListRecursively(full_path, flag_str)
+                for file_path in temp_file_list:
+                    file_list.append(file_path)
+                
+            return file_list
+        else:
+            return []
+
+    except Exception, e:
+        logging.error("errors happen in GetFileListRecursively")        
+
 class DICOMFileReader(object):
     """
     read all dicom files for the given dir/file path. 
@@ -77,16 +120,18 @@ class DICOMFileReader(object):
         try:
             fail_to_parse = []
 
-            self.dicom_file_paths = GetFileList(self.dicom_path)
+            self.dicom_file_paths = GetFileListRecursively(self.dicom_path)
+            logging.info("There are %s files under %s in total." % (len(self.dicom_file_paths), self.dicom_path))
+
             for path in self.dicom_file_paths:
                 try:
                     dicom_file = dicom.read_file(path)
                     self.dicom_files.append(dicom_file)
                 except Exception, e:
                     fail_to_parse.append(path)
-                    logging.error("fail to pare dicom file %s" % path)
+                    logging.error("fail to pare file %s. Is it a valid dicom file?" % path)
 
-            logging.info("%s dicom file are parsed successfully" % len(self.dicom_files))
+            logging.info("%s dicom files are parsed successfully" % len(self.dicom_files))
 
             if len(self.dicom_file_paths) != len(self.dicom_files):
                 for fail_path in fail_to_parse:
@@ -117,4 +162,8 @@ if __name__ == '__main__':
     multi_file_reader = DICOMFileReader("D:/Project/PythonCode/dicom_converter/test/DEF FOIE ART. - 107198")
     multi_file_reader.ReadDICOMFiles()
     print multi_file_reader.dicom_file_paths
+
+    file_list = GetFileListRecursively("D:/hello")
+    print file_list
+    print len(file_list)
 
