@@ -8,10 +8,9 @@ this module aims to implement common dicom converter following the config file
 __author__ = 'YANG Chunshan'
 
 import dicom
-import logging
 
 from dicom_converter_config import DICOMDataConverterConfig
-
+from dicom_converter_logging import DICOMConvertLogger
 
 
 DICOM_STRING_VR = ["AS", "CS", "DA", "DS",
@@ -23,7 +22,11 @@ DICOM_INT_VR = ["US", "UL", "SS", "SL"]
 
 DICOM_FLOAT_VR = ["FL", "FD"]
 
-DICOM_BYTE_VR = ["OB", "OW"]   
+DICOM_BYTE_VR = ["OB", "OW"]
+
+def Logger():
+   return DICOMConvertLogger().getInstance()
+   
 
 def AddDICOMTags(dicom_file, add_tags):
     """
@@ -33,7 +36,7 @@ def AddDICOMTags(dicom_file, add_tags):
     """
     for tag in add_tags:
         if tag["ID"] in dicom_file:
-            logging.info("tag %#x is already in dicom file." % tag["ID"])
+            Logger().info("tag %#x is already in dicom file." % tag["ID"])
             continue
 
         add_value = None
@@ -43,9 +46,9 @@ def AddDICOMTags(dicom_file, add_tags):
             if tag["ReferenceTagID"] in dicom_file:
                 add_value = dicom_file[tag["ReferenceTagID"]].value
             else:
-                logging.warning("reference tag %#x doesn't exist." % tag["ReferenceTagID"])
+                Logger().warning("reference tag %#x doesn't exist." % tag["ReferenceTagID"])
         else:
-            logging.warning("the need-to-add tag %#x lacks of content." % tag["ID"])
+            Logger().warning("the need-to-add tag %#x lacks of content." % tag["ID"])
             continue
 
         try:
@@ -66,11 +69,11 @@ def AddDICOMTags(dicom_file, add_tags):
                     float_value = float(add_value)
                     dicom_file.add_new(tag["ID"], tag["VR"], float_value)
             else:
-                logging.warning("%s is not a supported VR yet" % tag["VR"])
+                Logger().warning("%s is not a supported VR yet" % tag["VR"])
         except Exception, e:
-            logging.error("Fail to add new tag %#x into dicom file: %s" % (tag["ID"], e.message)) 
+            Logger().error("Fail to add new tag %#x into dicom file: %s" % (tag["ID"], e.message)) 
 
-    logging.debug("Add related tags finished.")
+    Logger().debug("Add related tags finished.")
 
 """delete tags from one dicom file"""
 def DeleteTags(dicom_file, delete_tags):
@@ -78,9 +81,9 @@ def DeleteTags(dicom_file, delete_tags):
         if tag in dicom_file:
             del dicom_file[tag]
         else:
-            logging.info("Tag %#x doesn't exist in the dicom file." % tag)
+            Logger().info("Tag %#x doesn't exist in the dicom file." % tag)
 
-    logging.debug("Delete related tags finished.")
+    Logger().debug("Delete related tags finished.")
 
 """modify tags in one dicom file"""
 def ModifyTags(dicom_file, modify_tags):
@@ -91,7 +94,7 @@ def ModifyTags(dicom_file, modify_tags):
     """
     for tag in modify_tags:
         if tag["ID"] not in dicom_file:
-            logging.warning("tag %#x is not in dicom file." % tag["ID"])
+            Logger().warning("tag %#x is not in dicom file." % tag["ID"])
             continue
 
         modify_value = None
@@ -101,9 +104,9 @@ def ModifyTags(dicom_file, modify_tags):
             if tag["ReferenceTagID"] in dicom_file:
                 modify_value = dicom_file[tag["ReferenceTagID"]].value
             else:
-                logging.warning("reference tag %#x doesn't exist." % tag["ReferenceTagID"])
+                Logger().warning("reference tag %#x doesn't exist." % tag["ReferenceTagID"])
         else:
-            logging.warning("the need-to-modify tag %#x lacks of content." % tag["ID"])
+            Logger().warning("the need-to-modify tag %#x lacks of content." % tag["ID"])
             continue
 
         try:
@@ -124,24 +127,14 @@ def ModifyTags(dicom_file, modify_tags):
                     float_value = float(modify_value)
                     dicom_file[tag["ID"]].value = float_value
             else:
-                logging.warning("%s is not a supported VR yet" % tag["VR"])
+                Logger().warning("%s is not a supported VR yet" % tag["VR"])
         except Exception, e:
-            logging.error("Fail to modify value of tag %#x in the dicom file: %s" % (tag["ID"], e.message)) 
+            Logger().error("Fail to modify value of tag %#x in the dicom file: %s" % (tag["ID"], e.message)) 
 
-    logging.debug("Modify related tags finished.")  
+    Logger().debug("Modify related tags finished.")  
 
 if __name__ == '__main__':
-
-    import os
     from dicom_file_reader import DICOMFileReader
-
-
-    current_path = os.getcwd()
-    logging.basicConfig(level = logging.DEBUG, 
-        format='%(asctime)s  %(filename)s  [line:%(lineno)d]  %(levelname)s  %(message)s',
-        datefmt='%Y %b %d %H:%M:%S',
-        filename = os.path.join(current_path, 'log.txt') , 
-        filemode = "w")
 
     #config_example = DICOMDataConverterConfig("D:/Project/PythonCode/dicom_converter/test/converter_config.xml")
     config_example = DICOMDataConverterConfig("D:/Project/PythonCode/dicom_converter/test/philip2uih_dti.xml")

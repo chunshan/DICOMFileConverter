@@ -16,6 +16,11 @@ import dicom
 import logging
 import struct
 
+from dicom_converter_logging import DICOMConvertLogger
+
+def Logger():
+    return DICOMConvertLogger().getInstance() 
+
 def SiemensCSAHeaderParser(csa_header):
     """
     this function parses Siemens CSA header
@@ -24,7 +29,7 @@ def SiemensCSAHeaderParser(csa_header):
     Both are always little-endian, whatever the machine endian is.
     The CSA2 format begins with the string ‘SV10’, the CSA1 format does not.
     """
-    logging.info("enter func: SiemensCSAHeaderParser")
+    Logger().info("enter func: SiemensCSAHeaderParser")
     print len(csa_header)
 
     tag_list = []
@@ -108,7 +113,7 @@ def SiemensCSA1Parser(csa1_header):
     """
     #number of tags. Number of tags should apparently be between 1 and 128.
     num_tags, = struct.unpack("i", csa1_header[0:4])
-    logging.info("Number of tags in Siemens CSA1 header is: %s." % num_tags)
+    Logger().info("Number of tags in Siemens CSA1 header is: %s." % num_tags)
     if num_tags > 128 or num_tags < 0:
         raise "Wrong number of tags. Don''t know how to read this damned file format"
 
@@ -187,9 +192,9 @@ def SiemensCSA1Parser(csa1_header):
 
             tag_list.append(tag)
 
-        logging.info("Siemens CSA1 header is successfully parsed.")
+        Logger().info("Siemens CSA1 header is successfully parsed.")
     except Exception, e:
-        logging.error("Errors happen when parsing Siemens CSA1 header. Error is: %s." % e.message)
+        Logger().error("Errors happen when parsing Siemens CSA1 header. Error is: %s." % e.message)
 
     return tag_list
 
@@ -253,11 +258,11 @@ def SiemensCSA2Parser(csa2_header):
     end;
     return;
     """
-    logging.info("enter SiemensCSA2Parser")
+    Logger().info("enter SiemensCSA2Parser")
     
     #number of tags. Number of tags should apparently be between 1 and 128.
     num_tags, = struct.unpack("i", csa2_header[8:12])
-    logging.info("Number of tags in Siemens CSA2 header is: %s." % num_tags)
+    Logger().info("Number of tags in Siemens CSA2 header is: %s." % num_tags)
 
     if num_tags > 128 or num_tags < 0:
         raise "Wrong number of tags. Don''t know how to read this damned file format"
@@ -328,9 +333,9 @@ def SiemensCSA2Parser(csa2_header):
 
             tag_list.append(tag)
 
-        logging.info("Siemens CSA2 header is successfully parsed.")
+        Logger().info("Siemens CSA2 header is successfully parsed.")
     except Exception, e:
-        logging.error("Errors happen when parsing Siemens CSA2 header. Error is: %s." % e.message)
+        Logger().error("Errors happen when parsing Siemens CSA2 header. Error is: %s." % e.message)
     
     return tag_list
 

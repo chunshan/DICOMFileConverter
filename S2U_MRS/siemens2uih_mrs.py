@@ -18,7 +18,11 @@ import struct
 
 import siemens_csa_parser
 
+from dicom_converter_Logger() import DICOMConvertLogger
 
+def Logger():
+   return DICOMConvertLogger().getInstance()
+   
 def MRSSiemens2UIH(dicom_file):
     """
     this function translates Siemens MRS data to UIH MRS data.
@@ -29,7 +33,7 @@ def MRSSiemens2UIH(dicom_file):
     are perhaps different for different data.
     """
     try:
-        logging.info("enter customized func: MRSSiemens2UIH")
+        Logger().info("enter customized func: MRSSiemens2UIH")
 
         csa_header = dicom_file[0x00291110].value
         tag_list = siemens_csa_parser.SiemensCSAHeaderParser(csa_header)
@@ -61,7 +65,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         magnetic_strength = str(magnetic_strength)
         dicom_file.add_new(0x00180087, "DS", magnetic_strength)
-        logging.debug("MagneticFieldStrength with value: %s is inserted into the data." % magnetic_strength)
+        Logger().debug("MagneticFieldStrength with value: %s is inserted into the data." % magnetic_strength)
 
         #TransmitterFrequency
         transmitter_frequency = ""
@@ -73,7 +77,7 @@ def MRSSiemens2UIH(dicom_file):
         #transmitter_frequency = float(transmitter_frequency) * 1000
         transmitter_frequency = float(transmitter_frequency)
         dicom_file.add_new(0x00189098, "FD", transmitter_frequency)
-        logging.debug("TransmitterFrequency with value: %s is inserted into the data." % transmitter_frequency)
+        Logger().debug("TransmitterFrequency with value: %s is inserted into the data." % transmitter_frequency)
 
         #SpectralWidth
         spectral_width = ""
@@ -85,7 +89,7 @@ def MRSSiemens2UIH(dicom_file):
         spectral_width = 1.0 / float(spectral_width) * 1000000000
         #spectral_width = float(spectral_width)
         dicom_file.add_new(0x00189052, "FD", spectral_width)
-        logging.debug("SpectralWidth with value: %s is inserted into the data." % spectral_width)
+        Logger().debug("SpectralWidth with value: %s is inserted into the data." % spectral_width)
 
         #EchoTime
         echo_time = ""
@@ -96,7 +100,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         echo_time = str(echo_time)
         dicom_file.add_new(0x00180081, "DS", echo_time)
-        logging.debug("EchoTime with value: %s is inserted into the data." % echo_time)
+        Logger().debug("EchoTime with value: %s is inserted into the data." % echo_time)
 
         # RepetitionTime
         repetition_time = None
@@ -107,7 +111,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         repetition_time = str(repetition_time)
         dicom_file.add_new(0x00180080, "DS", repetition_time)
-        logging.debug("RepetitionTime with value: %s is inserted into the data." % repetition_time)
+        Logger().debug("RepetitionTime with value: %s is inserted into the data." % repetition_time)
 
         # Columns
         columns = ""
@@ -118,7 +122,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         columns = int(columns)
         dicom_file.add_new(0x00280011, "US", columns)
-        logging.debug("Columns with value: %s is inserted into the data." % columns)
+        Logger().debug("Columns with value: %s is inserted into the data." % columns)
 
         # Rows
         rows = None
@@ -129,7 +133,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         rows = int(rows)
         dicom_file.add_new(0x00280010, "US", rows)
-        logging.debug("Rows with value: %s is inserted into the data." % rows)
+        Logger().debug("Rows with value: %s is inserted into the data." % rows)
 
         # NumberOfFrames
         number_of_frames = None
@@ -140,7 +144,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         number_of_frames = str(number_of_frames)
         dicom_file.add_new(0x00280008, "IS", number_of_frames)
-        logging.debug("NumberOfFrames with value: %s is inserted into the data." % number_of_frames)
+        Logger().debug("NumberOfFrames with value: %s is inserted into the data." % number_of_frames)
 
         # DataPointColumns
         data_point_columns = None
@@ -151,7 +155,7 @@ def MRSSiemens2UIH(dicom_file):
                 break
         data_point_columns = int(data_point_columns)
         dicom_file.add_new(0x00289002, "UL", data_point_columns)
-        logging.debug("DataPointColumns with value: %s is inserted into the data." % data_point_columns)
+        Logger().debug("DataPointColumns with value: %s is inserted into the data." % data_point_columns)
 
         # FOVPosition
         fov_position = None
@@ -161,7 +165,7 @@ def MRSSiemens2UIH(dicom_file):
                 #print "FOVPosition: %s" % fov_position
                 break
         dicom_file.add_new(0x0065ff01, "DS", fov_position)
-        logging.debug("FOVPosition with value: %s is inserted into the data." % fov_position)
+        Logger().debug("FOVPosition with value: %s is inserted into the data." % fov_position)
 
         #PixelSpacing
         pixel_spacing = None
@@ -183,7 +187,7 @@ def MRSSiemens2UIH(dicom_file):
         fov_patient = [float(pixel_spacing[0])*int(columns), float(pixel_spacing[1])*int(rows), float(voi_thickness)]
         #print "FOVPatient: %s" % fov_patient
         dicom_file.add_new(0x0065ff04, "DS", fov_patient)
-        logging.debug("FOVPatient with value: %s is inserted into the data." % fov_patient)
+        Logger().debug("FOVPatient with value: %s is inserted into the data." % fov_patient)
 
         #VoiPhaseFov
         voi_phase_fov = None
@@ -205,7 +209,7 @@ def MRSSiemens2UIH(dicom_file):
         voi_patient = [float(voi_phase_fov), float(voi_readout_fov), float(voi_thickness)]
         #print "VOIPatient: %s" % voi_patient
         dicom_file.add_new(0x0065ff05, "DS", voi_patient)
-        logging.debug("VOIPatient with value: %s is inserted into the data." % voi_patient)
+        Logger().debug("VOIPatient with value: %s is inserted into the data." % voi_patient)
 
         # ImageOrientation
         image_orientation = None
@@ -228,7 +232,7 @@ def MRSSiemens2UIH(dicom_file):
 
         #print image_orientation
         dicom_file.add_new(0x0065ff02, "DS", image_orientation)
-        logging.debug("ImageOrientation with value: %s is inserted into the data." % image_orientation)
+        Logger().debug("ImageOrientation with value: %s is inserted into the data." % image_orientation)
 
         # spectroscopy data
         spectroscopy_data = dicom_file[0x7fe11010].value
@@ -239,7 +243,7 @@ def MRSSiemens2UIH(dicom_file):
         #print data_len / 4
         #print len(item_val)
         dicom_file.add_new(0x56000020, "OF", item_val) 
-        logging.debug("Spectroscopy data is inserted into the data. Point number: %s" % len(item_val))
+        Logger().debug("Spectroscopy data is inserted into the data. Point number: %s" % len(item_val))
 
         #print dicom_file[0x56000020].VM 
 
@@ -247,18 +251,18 @@ def MRSSiemens2UIH(dicom_file):
         del dicom_file[0x7fe11010]
         del dicom_file[0x00291110] 
         del dicom_file[0x00291120]
-        logging.debug("Delete Siemens Image CSA header, Series CSA header, and Spectroscopy data successfully.")  
+        Logger().debug("Delete Siemens Image CSA header, Series CSA header, and Spectroscopy data successfully.")  
 
-        logging.info("Exit customized func: MRSSiemens2UIH successfully.")
+        Logger().info("Exit customized func: MRSSiemens2UIH successfully.")
     except Exception, e:
-        logging.error("errors happen in MRSSiemens2UIH. Error is: %s" % e.message)
+        Logger().error("errors happen in MRSSiemens2UIH. Error is: %s" % e.message)
 
 
 if __name__ == '__main__':
     import os
 
     current_path = os.getcwd()
-    logging.basicConfig(level = logging.DEBUG, 
+    logging.basicConfig(level = Logger().DEBUG, 
         format='%(asctime)s  %(filename)s  [line:%(lineno)d]  %(levelname)s  %(message)s',
         datefmt='%Y %b %d %H:%M:%S',
         filename = os.path.join(current_path, 'log.txt') , 

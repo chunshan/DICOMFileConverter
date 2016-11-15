@@ -44,14 +44,12 @@ TODO:
 
 __author__ = 'YANG Chunshan'
 
-import dicom
-import logging
 import os
-
 from dicom_converter_config import DICOMDataConverterConfig
 from dicom_file_reader import DICOMFileReader
 import dicom_converter_common
 import dicom_converter_customized
+from dicom_converter_logging import DICOMConvertLogger
 
 def ComposeNewFilePaths(new_folder_path, old_file_paths):
     """
@@ -67,24 +65,23 @@ def ComposeNewFilePaths(new_folder_path, old_file_paths):
 
 
 if __name__ == '__main__':
-    current_path = os.getcwd()
-    logging.basicConfig(level = logging.DEBUG, 
-        format='%(asctime)s  %(filename)s  [line:%(lineno)d]  %(levelname)s  %(message)s',
-        datefmt='%Y %b %d %H:%M:%S',
-        filename = os.path.join(current_path, 'log.txt') , 
-        filemode = "w")
+    logger = DICOMConvertLogger().getInstance()
+    logger.info("DICOMConverter(command line version) has been started successfully.")
 
     while True:
         print "Please input a dicom file path or a dicom directory:"
         dicom_path = raw_input()
+        print "\n"
         # dicom_path = "D:/Project/PythonCode/dicom_converter/test/DEF FOIE ART. - 107198"
 
         print "Please input the config file path of dicom converter:"
         config_path = raw_input()
+        print "\n"
         # config_path = "D:/Project/PythonCode/dicom_converter/test/converter_config.xml"
 
         print "Please input the destination directory to contain the modified dicom:"
         dest_dir = raw_input()
+        print "\n"
         # dest_dir = "D:/Project/PythonCode/dicom_converter/test/newDEF"
 
         try:
@@ -102,19 +99,23 @@ if __name__ == '__main__':
             customized_method = converter_customized.GetCustomizedMethod()
 
             for i in range(len(new_file_paths)):
-                dicom_file = dicom_file_reader.dicom_files[i]
-                new_path = new_file_paths[i]
+                try:
+                    dicom_file = dicom_file_reader.dicom_files[i]
+                    new_path = new_file_paths[i]
 
-                dicom_converter_common.AddDICOMTags(dicom_file, converter_config.add_tags)
-                dicom_converter_common.DeleteTags(dicom_file, converter_config.delete_tags)
-                dicom_converter_common.ModifyTags(dicom_file, converter_config.modify_tags)
+                    dicom_converter_common.AddDICOMTags(dicom_file, converter_config.add_tags)
+                    dicom_converter_common.DeleteTags(dicom_file, converter_config.delete_tags)
+                    dicom_converter_common.ModifyTags(dicom_file, converter_config.modify_tags)
 
-                # customized converter
-                customized_method(dicom_file)
+                    # customized converter
+                    customized_method(dicom_file)
 
-                dicom_file.save_as(new_path)
+                    dicom_file.save_as(new_path)
+                except Exception, e:
+                    print "Process file: %s failed. Error is: %s." % (new_path, e.message)
 
             print "DICOM files have been converted successfully!"
+            print "\n\n"
         except Exception, e:
             print e.message
 

@@ -8,7 +8,7 @@ this module parse the DICOM data converter config file
 __author__ = 'YANG Chunshan'
 
 import xml.dom.minidom
-import logging
+from dicom_converter_logging import DICOMConvertLogger
 
 def TagString2Tag(tag_string):
     """
@@ -45,21 +45,22 @@ class DICOMDataConverterConfig(object):
         self.config_title = None
         self.customized_module_name = None
         self.customized_func_name = None
-
+        self.logger = DICOMConvertLogger().getInstance()
+		
     def Parse(self):
         """
         read ADD tags, DELETE tags, MODIFY tags from the config file
         """
         try:
             config_dom = xml.dom.minidom.parse(self.config_path)
-            logging.info("%s is parsed by xml.dom successfully." % self.config_path)
+            self.logger.info("%s is parsed by xml.dom successfully." % self.config_path)
 
             config_content = config_dom.documentElement
 
             add_content = config_content.getElementsByTagName("ADD")
             add_elements = add_content[0].getElementsByTagName("Tag")
             self.__ReadADDorModifyTags(add_elements, self.add_tags)
-            logging.debug("Read all ADD nodes successfully. There are %s tags to be added" % len(self.add_tags))
+            self.logger.info("Read all ADD nodes successfully. There are %s tags to be added" % len(self.add_tags))
 
             delete_content = config_content.getElementsByTagName("DELETE")
             delete_elements = delete_content[0].getElementsByTagName("Tag")
@@ -67,29 +68,29 @@ class DICOMDataConverterConfig(object):
                 tag_string = element.getAttribute("ID")
                 tag = TagString2Tag(tag_string)
                 self.delete_tags.append(tag)
-            logging.debug("Read all DELETE nodes successfully. There are  %s tags to be deleted." % len(self.delete_tags))
+            self.logger.info("Read all DELETE nodes successfully. There are  %s tags to be deleted." % len(self.delete_tags))
 
             modify_content = config_content.getElementsByTagName("MODIFY")
             modify_elements = modify_content[0].getElementsByTagName("Tag")
             self.__ReadADDorModifyTags(modify_elements, self.modify_tags)
-            logging.debug("Read all MODIFY nodes successfully. There are %s tags to be modified" % len(self.modify_tags))
+            self.logger.info("Read all MODIFY nodes successfully. There are %s tags to be modified" % len(self.modify_tags))
 
             self.config_title = config_content.getAttribute("Title")
 
             customized_content = config_content.getElementsByTagName("CUSTOMIZED")
             if len(customized_content) == 0:
-                logging.info("There is no customized config in the file.")
+                self.logger.info("There is no customized config in the file.")
             else:
                 module_element = customized_content[0].getElementsByTagName("ModuleName")
                 self.customized_module_name = module_element[0].firstChild.data
                 func_element = customized_content[0].getElementsByTagName("FunctionName")
                 self.customized_func_name = func_element[0].firstChild.data
 
-            logging.debug("Read customized nodes successfully. " )
+            self.logger.info("Read customized nodes successfully. " )
 
-            logging.info("Read all contentes successfully in %s." % self.config_path)
+            self.logger.info("Read all contentes successfully in %s." % self.config_path)
         except StandardError, e:
-            logging.error("Errors happen when parsing config: %s" % e.message)
+            self.logger.error("Errors happen when parsing config: %s" % e.message)
 
     def __ReadADDorModifyTags(self, dom_elements, add_or_modify_tags):
         """
@@ -115,16 +116,6 @@ class DICOMDataConverterConfig(object):
 
 
 if __name__ == '__main__':
-
-    import os
-
-    current_path = os.getcwd()
-    logging.basicConfig(level = logging.DEBUG, 
-        format='%(asctime)s  %(filename)s  [line:%(lineno)d]  %(levelname)s  %(message)s',
-        datefmt='%Y %b %d %H:%M:%S',
-        filename = os.path.join(current_path, 'log.txt') , 
-        filemode = "w")
-
     config_example = DICOMDataConverterConfig("D:/Project/PythonCode/dicom_converter/test/converter_config.xml")
     # config_example = DICOMDataConverterConfig("D:/Project/PythonCode/dicom_converter/test/philip2uih_dti.xml")
     config_example.Parse()

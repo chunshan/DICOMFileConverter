@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#SIEMENS_CSA_Header -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gdcmdump - GDCM Wiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.19.2">
+<link rel="shortcut icon" href="http://gdcm.sourceforge.net/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://gdcm.sourceforge.net/wiki/opensearch_desc.php" title="GDCM Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://gdcm.sourceforge.net/wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="GDCM Wiki Atom feed" href="http://gdcm.sourceforge.net/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="./Gdcmdump - GDCM Wiki_files/load.php">
+<style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: g137895_mediawiki:resourceloader:filter:minify-css:7:8b08bdc91c52a9ffba396dccfb5b473c */
+
+
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: g137895_mediawiki:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: g137895_mediawiki:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="./Gdcmdump - GDCM Wiki_files/load(1).php"></script><script src="./Gdcmdump - GDCM Wiki_files/load(2).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gdcmdump","wgTitle":"Gdcmdump","wgCurRevisionId":1585,"wgArticleId":38,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Applications","GDCM"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Gdcmdump","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: g137895_mediawiki:resourceloader:filter:minify-js:7:9983699ab6150ffa89a90653b2338ac8 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script type="text/javascript" src="./Gdcmdump - GDCM Wiki_files/load(3).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Gdcmdump skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;" class="js-messagebox"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">
+				<span dir="auto">Gdcmdump</span>
+			</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From GDCM Wiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to: <a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#mw-head">navigation</a>,
+					<a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#Doxygen"><span class="tocnumber">2</span> <span class="toctext">Doxygen</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#Help"><span class="tocnumber">3</span> <span class="toctext">Help</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#Implicit_Transfer_Syntax"><span class="tocnumber">4</span> <span class="toctext">Implicit Transfer Syntax</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#Private_Group"><span class="tocnumber">5</span> <span class="toctext">Private Group</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#SIEMENS_CSA_Header"><span class="tocnumber">6</span> <span class="toctext">SIEMENS CSA Header</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#Protocol_Data_Block"><span class="tocnumber">7</span> <span class="toctext">Protocol Data Block</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#PMS.2FELSCINT1_Protocol_Information"><span class="tocnumber">8</span> <span class="toctext">PMS/ELSCINT1 Protocol Information</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="Introduction"> Introduction </span></h2>
+<p>Tool to dump fields of a DICOM file to screen.
+</p>
+<h2> <span class="mw-headline" id="Doxygen"> Doxygen </span></h2>
+<ul><li> <a rel="nofollow" class="external free" href="http://gdcm.sourceforge.net/html/gdcmdump.html">http://gdcm.sourceforge.net/html/gdcmdump.html</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Help"> Help </span></h2>
+<pre>$ gdcmdump --help
+</pre>
+<pre>gdcmdump: gdcm 2.1.0 $Date: 2008-10-17 14:21:52 +0200 (Fri, 17 Oct 2008) $
+Usage: gdcmdump [OPTION]... FILE...
+dumps a DICOM file, it will display the structure and values contained in the specified DICOM file
+Parameter (required):
+  -i --input     DICOM filename or directory
+Options:
+  -x --xml-dict  generate the XML dict (only private elements for now).
+  -r --recursive recursive.
+  -d --dump      dump value (limited use).
+  -p --print     print value instead of simply dumping (default).
+  -c --color     print in color.
+  -C --csa       print SIEMENS CSA Header (0029,[12]0,SIEMENS CSA HEADER).
+  -P --pdb       print GEMS Protocol Data Block (0025,1b,GEMS_SERS_01).
+General Options:
+  -V --verbose   more verbose (warning+error).
+  -W --warning   print warning info.
+  -D --debug     print debug info.
+  -E --error     print error info.
+  -h --help      print help.
+  -v --version   print version.
+Special Options:
+  -I --ignore-errors   print even if file is corrupted.
+</pre>
+<h2> <span class="mw-headline" id="Implicit_Transfer_Syntax"> Implicit Transfer Syntax </span></h2>
+<p>The VR are not found in the file, thus are presented with a "(??)", and right next to it (if found) the correct VR.
+</p>
+<pre>$ gdcmdump GE_DLX-8-MONO2-PrivateSyntax.dcm
+</pre>
+<pre># Dicom-File-Format
+
+# Dicom-Meta-Information-Header
+# Used TransferSyntax: 
+(0002,0000) UL 180                                                # 4,1 File Meta Information Group Length
+(0002,0001) OB 01\00                                              # 2,1 File Meta Information Version
+(0002,0002) UI [1.2.840.10008.5.1.4.1.1.12.1]                     # 28,1 Media Storage SOP Class UID
+(0002,0003) UI [1.2.840.113619.2.16.1.0.906539207.1.24207]         # 42,1 Media Storage SOP Instance UID
+(0002,0010) UI [1.2.840.113619.5.2]                               # 18,1 Transfer Syntax UID
+(0002,0012) UI [1.2.840.113619.6.13]                              # 20,1 Implementation Class UID
+(0002,0013) SH [1_2_5 ]                                           # 6,1 Implementation Version Name
+(0002,0016) AE [dlx_root]                                         # 8,1 Source Application Entity Title
+
+# Dicom-Data-Set
+# Used TransferSyntax: 1.2.840.113619.5.2
+(0008,0000)&nbsp;?? (UL) 434                                           # 4,1 Generic Group Length
+(0008,0005)&nbsp;?? (CS) [ISO_IR 100]                                  # 10,1-n Specific Character Set
+(0008,0008)&nbsp;?? (CS) [ORIGINAL\PRIMARY\SINGLE PLANE ]              # 30,2-n Image Type
+(0008,0016)&nbsp;?? (UI) [1.2.840.10008.5.1.4.1.1.12.1]                # 28,1 SOP Class UID
+(0008,0018)&nbsp;?? (UI) [1.2.840.113619.2.16.1.0.906539207.1.24207]         # 42,1 SOP Instance UID
+(0008,0020)&nbsp;?? (DA) [19980923]                                    # 8,1 Study Date
+(0008,0021)&nbsp;?? (DA) [19980923]                                    # 8,1 Series Date
+(0008,0022)&nbsp;?? (DA) [19980923]                                    # 8,1 Acquisition Date
+(0008,0023)&nbsp;?? (DA) [19980923]                                    # 8,1 Content Date
+(0008,0030)&nbsp;?? (TM) [101229.000]                                  # 10,1 Study Time
+(0008,0031)&nbsp;?? (TM) [101229.000]                                  # 10,1 Series Time
+(0008,0032)&nbsp;?? (TM) [102653.000]                                  # 10,1 Acquisition Time
+(0008,0033)&nbsp;?? (TM) [102653.000]                                  # 10,1 Content Time
+(0008,0050)&nbsp;?? (SH) (no value)                                    # 0,1 Accession Number
+(0008,0060)&nbsp;?? (CS) [XA]                                          # 2,1 Modality
+(0008,0070)&nbsp;?? (LO) [GE MEDICAL SYSTEMS]                          # 18,1 Manufacturer
+(0008,0080)&nbsp;?? (LO) (no value)                                    # 0,1 Institution Name
+(0008,0090)&nbsp;?? (PN) [U 61]                                        # 4,1 Referring Physician's Name
+(0008,1030)&nbsp;?? (LO) (no value)                                    # 0,1 Study Description
+(0008,103e)&nbsp;?? (LO) (no value)                                    # 0,1 Series Description
+(0008,1050)&nbsp;?? (PN) [DR FINET]                                    # 8,1-n Performing Physician's Name
+(0008,1070)&nbsp;?? (PN) [DR RIOUFOL]                                  # 10,1-n Operators' Name
+(0008,1090)&nbsp;?? (LO) [DLX ]                                        # 4,1 Manufacturer's Model Name
+(0008,2142)&nbsp;?? (IS) [1 ]                                          # 2,1 Start Trim
+(0008,2143)&nbsp;?? (IS) [54]                                          # 2,1 Stop Trim
+(0008,2144)&nbsp;?? (IS) [12]                                          # 2,1 Recommended Display Frame Rate
+(0010,0000)&nbsp;?? (UL) 114                                           # 4,1 Generic Group Length
+(0010,0010)&nbsp;?? (PN) [patient1        ]                            # 16,1 Patient's Name
+(0010,0020)&nbsp;?? (LO) [U 61]                                        # 4,1 Patient ID
+(0010,0030)&nbsp;?? (DA) (no value)                                    # 0,1 Patient's Birth Date
+(0010,0040)&nbsp;?? (CS) [O ]                                          # 2,1 Patient's Sex
+(0010,1020)&nbsp;?? (DS) [1.560000]                                    # 8,1 Patient's Size
+(0010,1030)&nbsp;?? (DS) [ 82.0 ]                                      # 6,1 Patient's Weight
+(0010,1040)&nbsp;?? (LO) [||||||]                                      # 6,1 Patient's Address
+(0010,2154)&nbsp;?? (SH) (no value)                                    # 0,1-n Patient's Telephone Numbers
+(0010,21b0)&nbsp;?? (LT) (no value)                                    # 0,1 Additional Patient History
+(0011,0000)&nbsp;?? (UL) 36                                            # 4,1 Generic Group Length
+(0011,0010)&nbsp;?? (LO) [DLX_PATNT_01]                                # 12,1 Private Creator
+(0011,1001)&nbsp;?? (LT) [02-03-33]                                    # 8,1 Patient DOB
+(0015,0000)&nbsp;?? (UL) 68                                            # 4,1 Generic Group Length
+(0015,0010)&nbsp;?? (LO) [DLX_EXAMS_01]                                # 12,1 Private Creator
+(0015,1001)&nbsp;?? (DS) [0.000000]                                    # 8,1 Stenos_calibr_ratio;
+(0015,1002)&nbsp;?? (DS) [0.178209]                                    # 8,1 Stenos_magnification;
+(0015,1003)&nbsp;?? (DS) [0.178209]                                    # 8,1 Cardiac_calibr_ratio;
+(0018,0000)&nbsp;?? (UL) 1064                                          # 4,1 Generic Group Length
+(0018,0022)&nbsp;?? (CS) (no value)                                    # 0,1-n Scan Options
+(0018,0040)&nbsp;?? (IS) [12]                                          # 2,1 Cine Rate
+(0018,0060)&nbsp;?? (DS) [89]                                          # 2,1 KVP
+(0018,1020)&nbsp;?? (LO) [1006]                                        # 4,1-n Software Version(s)
+(0018,1065)&nbsp;?? (DS) [0.0\8.000000e+01\8.000000e+01\8.000000e+01\8.000000e+01\7.999998e+01\8.000002e+01\8.000002e+01\7.999998e+01\7.999998e+01\7.999998e+01\8.000005e+01\7.999998e+01\7.999998e+01\8.000005e+01\7.999992e+01\8.000005e+01\8.000005e+01\7.999992e+01\8.000005e+01\7.999]         # 692,1-n Frame Time Vector
+(0018,1066)&nbsp;?? (DS) [0.0 ]                                        # 4,1 Frame Delay
+(0018,1110)&nbsp;?? (DS) [0.000000]                                    # 8,1 Distance Source to Detector
+(0018,1111)&nbsp;?? (DS) [0 ]                                          # 2,1 Distance Source to Patient
+(0018,1114)&nbsp;?? (DS) [0.000000]                                    # 8,1 Estimated Radiographic Magnification Factor
+(0018,1134)&nbsp;?? (CS) [STATIC]                                      # 6,1 Table Motion
+(0018,1135)&nbsp;?? (DS) [0 ]                                          # 2,1-n Table Vertical Increment
+(0018,1136)&nbsp;?? (DS) [0 ]                                          # 2,1-n Table Lateral Increment
+(0018,1137)&nbsp;?? (DS) [0 ]                                          # 2,1-n Table Longitudinal Increment
+(0018,1147)&nbsp;?? (CS) [ROUND ]                                      # 6,1 Field of View Shape
+(0018,1149)&nbsp;?? (IS) [114 ]                                        # 4,1-2 Field of View Dimension(s)
+(0018,1151)&nbsp;?? (IS) [54]                                          # 2,1 X-Ray Tube Current
+(0018,1155)&nbsp;?? (CS) [GR]                                          # 2,1 Radiation Setting
+(0018,115a)&nbsp;?? (CS) [PULSED]                                      # 6,1 Radiation Mode
+(0018,1162)&nbsp;?? (DS) [228.600006]                                  # 10,1 Intensifier Size
+(0018,1166)&nbsp;?? (CS) [IN]                                          # 2,1-n Grid
+(0018,1500)&nbsp;?? (CS) [STATIC]                                      # 6,1 Positioner Motion
+(0018,1510)&nbsp;?? (DS) [-8]                                          # 2,1 Positioner Primary Angle
+(0018,1511)&nbsp;?? (DS) [22]                                          # 2,1 Positioner Secondary Angle
+(0018,1520)&nbsp;?? (DS) (no value)                                    # 0,1-n Positioner Primary Angle Increment
+(0018,1521)&nbsp;?? (DS) (no value)                                    # 0,1-n Positioner Secondary Angle Increment
+(0018,1600)&nbsp;?? (CS) [CIRCULAR]                                    # 8,1-3 Shutter Shape
+(0018,1610)&nbsp;?? (IS) [255\255 ]                                    # 8,2 Center of Circular Shutter
+(0018,1612)&nbsp;?? (IS) [242 ]                                        # 4,1 Radius of Circular Shutter
+(0018,1700)&nbsp;?? (CS) [CIRCULAR]                                    # 8,1-3 Collimator Shape
+(0018,1710)&nbsp;?? (IS) [256\256 ]                                    # 8,2 Center of Circular Collimator
+(0018,1712)&nbsp;?? (IS) [245 ]                                        # 4,1 Radius of Circular Collimator
+(0019,0000)&nbsp;?? (UL) 318                                           # 4,1 Generic Group Length
+(0019,0010)&nbsp;?? (LO) [DLX_SERIE_01]                                # 12,1 Private Creator
+(0019,1001)&nbsp;?? (DS) [0 ]                                          # 2,1 Gantry machine angles (L) first frame
+(0019,1002)&nbsp;?? (DS) [22]                                          # 2,1 Gantry machine angles (P) first frame
+(0019,1003)&nbsp;?? (DS) [8 ]                                          # 2,1 Gantry machine angles (C) first frame
+(0019,1004)&nbsp;?? (CS) [L ]                                          # 2,1 L arm Label
+(0019,1005)&nbsp;?? (CS) [CAU ]                                        # 4,1 C arm Label
+(0019,1006)&nbsp;?? (CS) [RAO ]                                        # 4,1 Pivot Label
+(0019,1007)&nbsp;?? (ST) [CORONAROGRAPHIE     ]                        # 20,1 Adx_procedure_name
+(0019,1008)&nbsp;?? (ST) [CARDIAQUE   ]                                # 12,1 DLX Exam Name
+(0019,1009)&nbsp;?? (SH) [MED ADULT ]                                  # 10,1 Adx_patient_size
+(0019,100a)&nbsp;?? (IS) [1 ]                                          # 2,1 Dlx Record View
+(0019,1010)&nbsp;?? (DS) [0.000000]                                    # 8,1 Dlx Injector Delay
+(0019,1011)&nbsp;?? (CS) [0 ]                                          # 2,1 Adx_auto_inject
+(0019,1014)&nbsp;?? (IS) [3 ]                                          # 2,1 Adx_acquisition_mode
+(0019,1015)&nbsp;?? (CS) [0 ]                                          # 2,1 Adx_camera_rotation_enable
+(0019,1016)&nbsp;?? (CS) [0 ]                                          # 2,1 Adx_reverse_sweep
+(0019,1017)&nbsp;?? (IS) [7 ]                                          # 2,1 usr_spa_flt_strgth
+(0019,1018)&nbsp;?? (IS) [1 ]                                          # 2,1 usr_zoom_factor
+(0019,1019)&nbsp;?? (IS) [255 ]                                        # 4,1 X zoom
+(0019,101a)&nbsp;?? (IS) [255 ]                                        # 4,1 Y zoom
+(0019,101b)&nbsp;?? (DS) [0.9 ]                                        # 4,1 Adx_focus
+(0019,101c)&nbsp;?? (CS) [1 ]                                          # 2,1 Dlx Dose
+(0019,101d)&nbsp;?? (IS) [0 ]                                          # 2,1 Side_mark
+(0019,101e)&nbsp;?? (IS) [0 ]                                          # 2,1 Percent landscape
+(0019,101f)&nbsp;?? (DS) [7.300000]                                    # 8,1 Adx_exposure_duration
+(0020,0000)&nbsp;?? (UL) 144                                           # 4,1 Generic Group Length
+(0020,000d)&nbsp;?? (UI) [1.2.840.113619.2.16.1.0.906538349.2.1370]         # 40,1 Study Instance UID
+(0020,000e)&nbsp;?? (UI) [1.2.840.113619.2.16.1.0.906538349.2.1370.1]         # 42,1 Series Instance UID
+(0020,0010)&nbsp;?? (SH) [0 ]                                          # 2,1 Study ID
+(0020,0011)&nbsp;?? (IS) [1 ]                                          # 2,1 Series Number
+(0020,0013)&nbsp;?? (IS) [8 ]                                          # 2,1 Instance Number
+(0020,0020)&nbsp;?? (CS) (no value)                                    # 0,2 Patient Orientation
+(0020,4000)&nbsp;?? (LT) (no value)                                    # 0,1 Image Comments
+(0028,0000)&nbsp;?? (UL) 222                                           # 4,1 Generic Group Length
+(0028,0002)&nbsp;?? (US) 1                                             # 2,1 Samples per Pixel
+(0028,0004)&nbsp;?? (CS) [MONOCHROME2 ]                                # 12,1 Photometric Interpretation
+(0028,0008)&nbsp;?? (IS) [54]                                          # 2,1 Number of Frames
+(0028,0009)&nbsp;?? (AT) (0018,1065)                                   # 4,1-n Frame Increment Pointer
+(0028,0010)&nbsp;?? (US) 512                                           # 2,1 Rows
+(0028,0011)&nbsp;?? (US) 512                                           # 2,1 Columns
+(0028,0100)&nbsp;?? (US) 8                                             # 2,1 Bits Allocated
+(0028,0101)&nbsp;?? (US) 8                                             # 2,1 Bits Stored
+(0028,0102)&nbsp;?? (US) 7                                             # 2,1 High Bit
+(0028,0103)&nbsp;?? (US) 0                                             # 2,1 Pixel Representation
+(0028,1040)&nbsp;?? (CS) [DISP]                                        # 4,1 Pixel Intensity Relationship
+(0028,2110)&nbsp;?? (CS) [00]                                          # 2,1 Lossy Image Compression
+(0028,6010)&nbsp;?? (US) 18                                            # 2,1 Representative Frame Number
+(0028,6040)&nbsp;?? (US) (no value)                                    # 0,1-n R Wave Pointer
+(0028,6100)&nbsp;?? (SQ) (Sequence with defined length)                # 62,1 Mask Subtraction Sequence
+  (fffe,e000) na (Item with defined length)
+    (0028,6101)&nbsp;?? (CS) [AVG_SUB ]                                # 8,1 Mask Operation
+    (0028,6102)&nbsp;?? (US) 1\54                                      # 4,2-2n Applicable Frame Range
+    (0028,6110)&nbsp;?? (US) 1                                         # 2,1-n Mask Frame Numbers
+    (0028,6114)&nbsp;?? (FL) 0\0                                       # 8,2 Mask Sub-pixel Shift
+(0050,0000)&nbsp;?? (UL) 68                                            # 4,1 Generic Group Length
+(0050,0010)&nbsp;?? (SQ) (Sequence with defined length)                # 60,1 Device Sequence
+  (fffe,e000) na (Item with defined length)
+    (0008,0100)&nbsp;?? (SH) [BALL]                                    # 4,1 Code Value
+    (0008,0102)&nbsp;?? (SH) [99DEV ]                                  # 6,1 Coding Scheme Designator
+    (0050,0016)&nbsp;?? (DS) [40.0000 ]                                # 8,1 Device Diameter
+    (0050,0017)&nbsp;?? (CS) [MM]                                      # 2,1 Device Diameter Units
+(7fe0,0000)&nbsp;?? (UL) 14155784                                      # 4,1 Generic Group Length
+(7fe0,0010)&nbsp;?? (OB or OW =&gt; OW) 0c\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08\08         # 14155776,1 Pixel Data
+</pre>
+<h2> <span class="mw-headline" id="Private_Group"> Private Group </span></h2>
+<p>GDCM has a limited private dictionary. Whenever possible, it will try to lookup the private data element.
+</p>
+<pre>$ gdcmdump 012345.002.050.dcm
+</pre>
+<pre># Dicom-File-Format
+
+# Dicom-Meta-Information-Header
+# Used TransferSyntax: 
+(0002,0000) UL 178                                                # 4,1 File Meta Information Group Length
+(0002,0001) OB 00\01                                              # 2,1 File Meta Information Version
+(0002,0002) UI [1.2.840.10008.5.1.4.1.1.4]                        # 26,1 Media Storage SOP Class UID
+(0002,0003) UI [1.2.840.113619.2.5.1762386977.1328.985934491.693]         # 48,1 Media Storage SOP Instance UID
+(0002,0010) UI [1.2.840.10008.1.2.4.70]                           # 22,1 Transfer Syntax UID
+(0002,0012) UI [1.2.840.113619.6.44]                              # 20,1 Implementation Class UID
+(0002,0013) SH [R2.7.3r ]                                         # 8,1 Implementation Version Name
+
+# Dicom-Data-Set
+# Used TransferSyntax: 1.2.840.10008.1.2.4.70
+(0008,0000) UL 434                                                # 4,1 Generic Group Length
+(0008,0005) CS [ISO_IR 100]                                       # 10,1-n Specific Character Set
+(0008,0008) CS [ORIGINAL\PRIMARY\OTHER]                           # 22,2-n Image Type
+(0008,0016) UI [1.2.840.10008.5.1.4.1.1.4]                        # 26,1 SOP Class UID
+(0008,0018) UI [1.2.840.113619.2.5.1762386977.1328.985934491.693]         # 48,1 SOP Instance UID
+(0008,0020) DA [20010330]                                         # 8,1 Study Date
+(0008,0021) DA [20010330]                                         # 8,1 Series Date
+(0008,0022) DA [20010330]                                         # 8,1 Acquisition Date
+(0008,0023) DA [20010330]                                         # 8,1 Content Date
+(0008,0030) TM [160601]                                           # 6,1 Study Time
+(0008,0031) TM [160843]                                           # 6,1 Series Time
+(0008,0032) TM [160844]                                           # 6,1 Acquisition Time
+(0008,0033) TM [160844]                                           # 6,1 Content Time
+(0008,0050) SH (no value)                                         # 0,1 Accession Number
+(0008,0060) CS [MR]                                               # 2,1 Modality
+(0008,0070) LO [GE MEDICAL SYSTEMS]                               # 18,1 Manufacturer
+(0008,0080) LO [UNIVERSITY OF IOWA]                               # 18,1 Institution Name
+(0008,0090) PN [B692]                                             # 4,1 Referring Physician's Name
+(0008,1010) SH [MRCVOW0 ]                                         # 8,1 Station Name
+(0008,1030) LO [XXXXXXXXX BRAIN ]                                 # 16,1 Study Description
+(0008,103e) LO [COR T-1 VOLUME]                                   # 14,1 Series Description
+(0008,1070) PN [JP]                                               # 2,1-n Operators' Name
+(0008,1090) LO [GENESIS_SIGNA ]                                   # 14,1 Manufacturer's Model Name
+(0009,0000) UL 184                                                # 4,1 Generic Group Length
+(0009,0010) LO [GEMS_IDEN_01]                                     # 12,1 Private Creator
+(0009,1001) LO [GE_GENESIS_FF ]                                   # 14,1 Full fidelity
+(0009,1002) SH [MRCV]                                             # 4,1 Suite id
+(0009,1004) SH [SIGNA ]                                           # 6,1 Product id
+(0009,1027) SL 985968524                                          # 4,1 Image actual date
+(0009,1030) SH [19356UMR2 ]                                       # 10,1 Service id
+(0009,1031) SH [999 ]                                             # 4,1 Mobile location number
+(0009,10e3) UI [1.2.840.113619.1.1.4.1762386977]                  # 32,1 Equipment UID
+(0009,10e6) SH [08]                                               # 2,1 Genesis Version - now
+(0009,10e7) UL 2757786872                                         # 4,1 Exam Record checksum
+(0009,10e9) SL 985968523                                          # 4,1 Actual series data time stamp
+(0010,0000) UL 92                                                 # 4,1 Generic Group Length
+(0010,0010) PN [XXXXXXXXXXX ]                                     # 12,1 Patient's Name
+(0010,0020) LO [XX-XXXXX]                                         # 8,1 Patient ID
+(0010,0030) DA (no value)                                         # 0,1 Patient's Birth Date
+(0010,0040) CS [F ]                                               # 2,1 Patient's Sex
+(0010,1010) AS [019Y]                                             # 4,1 Patient's Age
+(0010,1030) DS [ 72.575000]                                       # 10,1 Patient's Weight
+(0010,21b0) LT (no value)                                         # 0,1 Additional Patient History
+(0011,0000) UL 30                                                 # 4,1 Generic Group Length
+(0011,0010) LO [GEMS_PATI_01]                                     # 12,1 Private Creator
+(0011,1010) SS 0                                                  # 2,1 Patient Status
+(0018,0000) UL 470                                                # 4,1 Generic Group Length
+(0018,0020) CS [RM]                                               # 2,1-n Scanning Sequence
+(0018,0021) CS [NONE]                                             # 4,1-n Sequence Variant
+(0018,0022) CS [VB_GEMS \EDR_GEMS ]                               # 18,1-n Scan Options
+(0018,0023) CS [3D]                                               # 2,1 MR Acquisition Type
+(0018,0025) CS [N ]                                               # 2,1 Angio Flag
+(0018,0050) DS [1.500000]                                         # 8,1 Slice Thickness
+(0018,0080) DS [ 20.000000]                                       # 10,1 Repetition Time
+(0018,0081) DS [6.000000]                                         # 8,1 Echo Time
+(0018,0083) DS [2.000000]                                         # 8,1 Number of Averages
+(0018,0084) DS [ 638685450.00000]                                 # 16,1 Imaging Frequency
+(0018,0085) SH [H1]                                               # 2,1 Imaged Nucleus
+(0018,0086) IS [ 1]                                               # 2,1-n Echo Number(s)
+(0018,0087) DS [15000 ]                                           # 6,1 Magnetic Field Strength
+(0018,0088) DS [1.500000]                                         # 8,1 Spacing Between Slices
+(0018,0091) IS [0 ]                                               # 2,1 Echo Train Length
+(0018,0093) DS [100.000000]                                       # 10,1 Percent Sampling
+(0018,0094) DS [100.000000]                                       # 10,1 Percent Phase Field of View
+(0018,0095) DS [122.109375]                                       # 10,1 Pixel Bandwidth
+(0018,1000) LO [000000000307546 ]                                 # 16,1 Device Serial Number
+(0018,1020) LO [08]                                               # 2,1-n Software Version(s)
+(0018,1050) DS [0.664062]                                         # 8,1 Spatial Resolution
+(0018,1088) IS [0 ]                                               # 2,1 Heart Rate
+(0018,1090) IS [0 ]                                               # 2,1 Cardiac Number of Images
+(0018,1094) IS [0 ]                                               # 2,1 Trigger Window
+(0018,1100) DS [170.000000]                                       # 10,1 Reconstruction Diameter
+(0018,1250) SH [HEAD]                                             # 4,1 Receive Coil Name
+(0018,1251) SH [HEAD]                                             # 4,1 Transmit Coil Name
+(0018,1310) US 0\256\256\0                                        # 8,4 Acquisition Matrix
+(0018,1312) CS [ROW ]                                             # 4,1 In-plane Phase Encoding Direction
+(0018,1314) DS [30]                                               # 2,1 Flip Angle
+(0018,1315) CS [N ]                                               # 2,1 Variable Flip Angle Flag
+(0018,1316) DS [0.004412]                                         # 8,1 SAR
+(0018,5100) CS [HFS ]                                             # 4,1 Patient Position
+(0019,0000) UL 1208                                               # 4,1 Generic Group Length
+(0019,0010) LO [GEMS_ACQU_01]                                     # 12,1 Private Creator
+(0019,100f) DS [424.399994]                                       # 10,1 Horiz. Frame of ref.
+(0019,1011) SS 0                                                  # 2,1 Series contrast
+(0019,1012) SS 3                                                  # 2,1 Last pseq
+(0019,1017) SS 8                                                  # 2,1 Series plane
+(0019,1018) LO [P ]                                               # 2,1 First scan ras
+(0019,1019) DS [-95.099998]                                       # 10,1 First scan location
+(0019,101a) LO [A ]                                               # 2,1 Last scan ras
+(0019,101b) DS [89.400002 ]                                       # 10,1 Last scan loc
+(0019,101e) DS [170.000000]                                       # 10,1 Display field of view
+(0019,105a) FL 1.31431e+009                                       # 4,1 Acquisition Duration
+(0019,107d) DS [0 ]                                               # 2,1 Second echo
+(0019,107e) SS 1                                                  # 2,1 Number of echoes
+(0019,107f) DS [0.000000]                                         # 8,1 Table delta
+(0019,1081) SS 0                                                  # 2,1 Contiguous
+(0019,1084) DS [0.240368]                                         # 8,1 Peak SAR
+(0019,1085) SS 1                                                  # 2,1 Monitor SAR
+(0019,1087) DS [0.000000]                                         # 8,1 Cardiac repetition time
+(0019,1088) SS 0                                                  # 2,1 Images per cardiac cycle
+(0019,108a) SS 11                                                 # 2,1 Actual receive gain analog
+(0019,108b) SS 27                                                 # 2,1 Actual receive gain digital
+(0019,108d) DS [0 ]                                               # 2,1 Delay after trigger
+(0019,108f) SS 0                                                  # 2,1 Swappf
+(0019,1090) SS 0                                                  # 2,1 Pause Interval
+(0019,1091) DS [0.000000]                                         # 8,1 Pause Time
+(0019,1092) SL 0                                                  # 4,1 Slice offset on freq axis
+(0019,1093) DS [638685450 ]                                       # 10,1 Auto Prescan Center Frequency
+(0019,1094) SS 98                                                 # 2,1 Auto Prescan Transmit Gain
+(0019,1095) SS 11                                                 # 2,1 Auto Prescan Analog receiver gain
+(0019,1096) SS 27                                                 # 2,1 Auto Prescan Digital receiver gain
+(0019,1097) SL 0                                                  # 4,1 Bitmap defining CVs
+(0019,1098) SS 2                                                  # 2,1 Center freq. Method
+(0019,109b) SS 1                                                  # 2,1 Pulse Sequence Mode
+(0019,109c) LO [iowa_3dgrass]                                     # 12,1 Pulse Sequence Name
+(0019,109d) DT [19700101000000]                                   # 14,1 Pulse Sequence Date
+(0019,109e) LO [3DGRASS ]                                         # 8,1 Internal Pulse Sequence Name
+(0019,109f) SS 1                                                  # 2,1 Transmitting Coil Type
+(0019,10a0) SS 0                                                  # 2,1 Surface Coil Type
+(0019,10a1) SS 0                                                  # 2,1 Extremity Coil flag
+(0019,10a2) SL 39475                                              # 4,1 Raw data run number
+(0019,10a3) UL 0                                                  # 4,1 Calibrated Field strength
+(0019,10a4) SS 0                                                  # 2,1 SAT fat/water/bone
+(0019,10a7) DS [0.000000]                                         # 8,1 User data 0
+(0019,10a8) DS [0.000000]                                         # 8,1 User data 1
+(0019,10a9) DS [0.000000]                                         # 8,1 User data 2
+(0019,10aa) DS [0.000000]                                         # 8,1 User data 3
+(0019,10ab) DS [0.000000]                                         # 8,1 User data 4
+(0019,10ac) DS [0.000000]                                         # 8,1 User data 5
+(0019,10ad) DS [0.000000]                                         # 8,1 User data 6
+(0019,10ae) DS [0.000000]                                         # 8,1 User data 7
+(0019,10af) DS [0.000000]                                         # 8,1 User data 8
+(0019,10b0) DS [0.000000]                                         # 8,1 User data 9
+(0019,10b1) DS [0.000000]                                         # 8,1 User data 10
+(0019,10b2) DS [0.000000]                                         # 8,1 User data 11
+(0019,10b3) DS [0.000000]                                         # 8,1 User data 12
+(0019,10b4) DS [0.000000]                                         # 8,1 User data 13
+(0019,10b5) DS [0.000000]                                         # 8,1 User data 14
+(0019,10b6) DS [0.000000]                                         # 8,1 User data 15
+(0019,10b7) DS [0.000000]                                         # 8,1 User data 16
+(0019,10b8) DS [0.000000]                                         # 8,1 User data 17
+(0019,10b9) DS [0.000000]                                         # 8,1 User data 18
+(0019,10ba) DS [0.000000]                                         # 8,1 User data 19
+(0019,10bb) DS [0.000000]                                         # 8,1 User data 20
+(0019,10bc) DS [0.000000]                                         # 8,1 User data 21
+(0019,10bd) DS [0.000000]                                         # 8,1 User data 22
+(0019,10be) DS [0.000000]                                         # 8,1 Projection angle
+(0019,10c0) SS 0                                                  # 2,1 Saturation planes
+(0019,10c1) SS 0                                                  # 2,1 Surface coil intensity
+(0019,10c2) SS 9990                                               # 2,1 SAT location R
+(0019,10c3) SS 9990                                               # 2,1 SAT location L
+(0019,10c4) SS 9990                                               # 2,1 SAT location A
+(0019,10c5) SS 9990                                               # 2,1 SAT location P
+(0019,10c6) SS 9990                                               # 2,1 SAT location H
+(0019,10c7) SS 9990                                               # 2,1 SAT location F
+(0019,10c8) SS 0                                                  # 2,1 SAT thickness R/L
+(0019,10c9) SS 0                                                  # 2,1 SAT thickness A/P
+(0019,10ca) SS 0                                                  # 2,1 SAT thickness H/F
+(0019,10cb) SS 0                                                  # 2,1 Phase Contrast flow axis
+(0019,10cc) SS 0                                                  # 2,1 Velocity encoding
+(0019,10cd) SS 0                                                  # 2,1 Thickness disclaimer
+(0019,10ce) SS 2                                                  # 2,1 Prescan type
+(0019,10cf) SS 0                                                  # 2,1 Prescan status
+(0019,10d2) SS 0                                                  # 2,1 Projection Algorithm
+(0019,10d3) SH (no value)                                         # 0,1 Projection Algorithm Name
+(0019,10d5) SS 0                                                  # 2,1 Fractional echo
+(0019,10d7) SS 0                                                  # 2,1 Cardiac phase number
+(0019,10d8) SS 0                                                  # 2,1 Variable echoflag
+(0019,10d9) DS [0.000000]                                         # 8,1 Concatenated SAT {# DTI Diffusion Dir., release 9.0 &amp; below}
+(0019,10df) DS [0.000000]                                         # 8,1 User data 23 {# DTI Diffusion Dir., release 9.0 &amp; below}
+(0019,10e0) DS [0.000000]                                         # 8,1 User data 24 {# DTI Diffusion Dir., release 10.0 &amp; above}
+(0019,10e2) DS [0.000000]                                         # 8,1 Velocity Encode Scale
+(0019,10f2) SS 0                                                  # 2,1 Fast phases
+(0019,10f9) DS [98]                                               # 2,1 Transmit gain
+(0020,0000) UL 364                                                # 4,1 Generic Group Length
+(0020,000d) UI [1.2.840.113619.2.5.1762386977.1328.985934491.590]         # 48,1 Study Instance UID
+(0020,000e) UI [1.2.840.113619.2.5.1762386977.1328.985934491.643]         # 48,1 Series Instance UID
+(0020,0010) SH [XXXX]                                             # 4,1 Study ID
+(0020,0011) IS [ 2]                                               # 2,1 Series Number
+(0020,0012) IS [ 0]                                               # 2,1 Acquisition Number
+(0020,0013) IS [50]                                               # 2,1 Instance Number
+(0020,0032) DS [-85.000000\ 21.600000\108.699997]                 # 32,3 Image Position (Patient)
+(0020,0037) DS [ 1.000000\0.000000\0.000000\0.000000\0.000000\ -1.000000]         # 56,6 Image Orientation (Patient)
+(0020,0052) UI [1.2.840.113619.2.5.1762386977.1361.985934326.515]         # 48,1 Frame of Reference UID
+(0020,0060) CS (no value)                                         # 0,1 Laterality
+(0020,0110) DS [ 0]                                               # 2,1 Temporal Resolution
+(0020,1040) LO [NA]                                               # 2,1 Position Reference Indicator
+(0020,1041) DS [-21.6000003815]                                   # 14,1 Slice Location
+(0021,0000) UL 372                                                # 4,1 Generic Group Length
+(0021,0010) LO [GEMS_RELA_01]                                     # 12,1 Private Creator
+(0021,1003) SS 0                                                  # 2,1 Series from which Prescribed
+(0021,1005) SH [08]                                               # 2,1 Genesis Version - now
+(0021,1007) UL 3705630100                                         # 4,1 Series Record checksum
+(0021,1018) SH [08]                                               # 2,1 Genesis version - Now
+(0021,1019) UL 2948493201                                         # 4,1 Acq recon record checksum
+(0021,1035) SS 1                                                  # 2,1 Series from which prescribed
+(0021,1036) SS 26                                                 # 2,1 Image from which prescribed
+(0021,1037) SS 16                                                 # 2,1 Screen Format
+(0021,104f) SS 124                                                # 2,1 Locations in acquisition
+(0021,1050) SS 0                                                  # 2,1 Graphically prescribed
+(0021,1051) DS [0.000000]                                         # 8,1 Rotation from source x rot
+(0021,1052) DS [0.000000]                                         # 8,1 Rotation from source y rot
+(0021,1053) DS [0.000000]                                         # 8,1 Rotation from source z rot
+(0021,1056) SL 1                                                  # 4,1 Num 3D slabs
+(0021,1057) SL 0                                                  # 4,1 Locs per 3D slab
+(0021,1058) SL 0                                                  # 4,1 Overlaps
+(0021,1059) SL 0                                                  # 4,1 Image Filtering 0.5/0.2T
+(0021,105a) SL 0                                                  # 4,1 Diffusion direction
+(0021,105b) DS [180.000000]                                       # 10,1 Tagging Flip Angle
+(0021,105c) DS [45.000000 ]                                       # 10,1 Tagging Orientation
+(0021,105d) DS [50000.000000]                                     # 12,1 Tag Spacing
+(0021,105e) DS [0.000000]                                         # 8,1 RTIA_timer
+(0021,105f) DS [0.000000]                                         # 8,1 Fps
+(0021,1081) DS [0.000000]                                         # 8,1 Auto window/level alpha
+(0021,1082) DS [0.000000]                                         # 8,1 Auto window/level beta
+(0021,1083) DS [0 ]                                               # 2,1 Auto window/level window
+(0021,1084) DS [0 ]                                               # 2,1 Auto window/level level
+(0023,0000) UL 58                                                 # 4,1 Generic Group Length
+(0023,0010) LO [GEMS_STDY_01]                                     # 12,1 Private Creator
+(0023,1070) FD 0                                                  # 8,1 Start time(secs) in first axial
+(0023,1074) SL 0                                                  # 4,1 No. of updates to header
+(0023,107d) SS 0                                                  # 2,1 Indicates study has complete info (DICOM/genesis)
+(0025,0000) UL 128                                                # 4,1 Generic Group Length
+(0025,0010) LO [GEMS_SERS_01]                                     # 12,1 Private Creator
+(0025,1006) SS 3                                                  # 2,1 Last pulse sequence used
+(0025,1007) SL 124                                                # 4,1 Images in Series
+(0025,1010) SL 0                                                  # 4,1 Landmark Counter
+(0025,1011) SS 1                                                  # 2,1 Number of Acquisitions
+(0025,1014) SL 0                                                  # 4,1 Indicates no. of updates to header
+(0025,1017) SL 0                                                  # 4,1 Series Complete Flag
+(0025,1018) SL 0                                                  # 4,1 Number of images archived
+(0025,1019) SL 124                                                # 4,1 Last image number used
+(0025,101a) SH [MRCVOW0 ]                                         # 8,1 Primary Receiver Suite and Host
+(0027,0000) UL 306                                                # 4,1 Generic Group Length
+(0027,0010) LO [GEMS_IMAG_01]                                     # 12,1 Private Creator
+(0027,1006) SL 0                                                  # 4,1 Image archive flag
+(0027,1010) SS 0                                                  # 2,1 Scout Type
+(0027,1030) SH (no value)                                         # 0,1 Foreign Image Revision
+(0027,1031) SS 2                                                  # 2,1 Imaging Mode
+(0027,1032) SS 3                                                  # 2,1 Pulse Sequence
+(0027,1033) SL 3072                                               # 4,1 Imaging Options
+(0027,1035) SS 8                                                  # 2,1 Plane Type
+(0027,1036) SL 8                                                  # 4,1 Oblique Plane
+(0027,1040) SH [P ]                                               # 2,1 RAS letter of image location
+(0027,1041) FL -21.6                                              # 4,1 Image location
+(0027,1042) FL 0                                                  # 4,1 Center R coord of plane image
+(0027,1043) FL -21.6                                              # 4,1 Center A coord of plane image
+(0027,1044) FL 23.7                                               # 4,1 Center S coord of plane image
+(0027,1045) FL 0                                                  # 4,1 Normal R coord
+(0027,1046) FL 1                                                  # 4,1 Normal A coord
+(0027,1047) FL 0                                                  # 4,1 Normal S coord
+(0027,1048) FL -85                                                # 4,1 R Coord of Top Right Corner
+(0027,1049) FL -21.6                                              # 4,1 A Coord of Top Right Corner
+(0027,104a) FL 108.7                                              # 4,1 S Coord of Top Right Corner
+(0027,104b) FL -85                                                # 4,1 R Coord of Bottom Right Corner
+(0027,104c) FL -21.6                                              # 4,1 A Coord of Bottom Right Corner
+(0027,104d) FL -61.3                                              # 4,1 S Coord of Bottom Right Corner
+(0027,1060) FL 256                                                # 4,1 Image dimension - X
+(0027,1061) FL 256                                                # 4,1 Image dimension - Y
+(0027,1062) FL 2                                                  # 4,1 Number of Excitations
+(0028,0000) UL 148                                                # 4,1 Generic Group Length
+(0028,0002) US 1                                                  # 2,1 Samples per Pixel
+(0028,0004) CS [MONOCHROME2 ]                                     # 12,1 Photometric Interpretation
+(0028,0010) US 256                                                # 2,1 Rows
+(0028,0011) US 256                                                # 2,1 Columns
+(0028,0030) DS [ 0.664062\0.664062]                               # 18,2 Pixel Spacing
+(0028,0100) US 16                                                 # 2,1 Bits Allocated
+(0028,0101) US 16                                                 # 2,1 Bits Stored
+(0028,0102) US 15                                                 # 2,1 High Bit
+(0028,0103) US 1                                                  # 2,1 Pixel Representation
+(0028,0120) SS 0                                                  # 2,1 Pixel Padding Value
+(0028,1050) DS [96]                                               # 2,1-n Window Center
+(0028,1051) DS [ 192]                                             # 4,1-n Window Width
+(0029,0000) UL 102                                                # 4,1 Generic Group Length
+(0029,0010) LO [GEMS_IMPS_01]                                     # 12,1 Private Creator
+(0029,1015) SL 0                                                  # 4,1 Lower range of Pixels1
+(0029,1016) SL 0                                                  # 4,1 Upper range of Pixels1
+(0029,1017) SL 0                                                  # 4,1 Lower range of Pixels2
+(0029,1018) SL 0                                                  # 4,1 Upper range of Pixels2
+(0029,1026) SS 2                                                  # 2,1 Version of the hdr struct
+(0029,1034) SL 16384                                              # 4,1 Advantage comp. Overflow
+(0029,1035) SL 0                                                  # 4,1 Advantage comp. Underflow
+(0043,0000) UL 5194                                               # 4,1 Generic Group Length
+(0043,0010) LO [GEMS_PARM_01]                                     # 12,1 Private Creator
+(0043,1001) SS 1                                                  # 2,1 Bitmap of prescan options
+(0043,1002) SS 0                                                  # 2,1 Gradient offset in X
+(0043,1003) SS 0                                                  # 2,1 Gradient offset in Y
+(0043,1004) SS 0                                                  # 2,1 Gradient offset in Z
+(0043,1006) SS 0                                                  # 2,1 Number of EPI shots
+(0043,1007) SS 0                                                  # 2,1 Views per segment
+(0043,1008) SS 0                                                  # 2,1 Respiratory rate, bpm
+(0043,1009) SS 0                                                  # 2,1 Respiratory trigger point
+(0043,100a) SS 1                                                  # 2,1 Type of receiver used
+(0043,100b) DS [0.000000]                                         # 8,1 DB/dt Peak rate of change of gradient field
+(0043,100c) DS [66.000000 ]                                       # 10,1 dB/dt Limits in units of percent
+(0043,100d) DS [0.000000]                                         # 8,1 PSD estimated limit
+(0043,100e) DS [0.000000]                                         # 8,1 PSD estimated limit in tesla per second
+(0043,100f) DS [0.096147]                                         # 8,1 Saravghead
+(0043,1010) US 0                                                  # 2,1 Window value
+(0043,101c) SS 0                                                  # 2,1 GE image integrity
+(0043,101d) SS 0                                                  # 2,1 Level value
+(0043,1028) OB 4d\52\20\52\65\63\6f\6e\20\3c\30\3e\00\2f\58\58\58\58\2f\32\2f\31\00\ff\00\00\00\01\00\00\00\01\00\00\00\40\10\40\18\80\10\4d\b5\82\00\00\00\33\00\00\00\00\00\00\00\00\00\00\00\00\00\38\3b\bc         # 80,1 Unique image iden
+(0043,1029) OB 00\00\00\01\42\12\f9\22\00\31\00\00\00\c0\00\00\00\00\03\fe\02\71\00\b4\00\ff\00\f2\01\21\01\3b\01\2c\01\48\01\55\01\4f\01\6b\01\87\01\78\01\85\01\98\01\d0\01\a5\01\9e\01\dc\01\be\01\c1\01\97         # 2068,1 Histogram tables
+(0043,102a) OB 55\41\00\00\00\00\00\2c\00\02\00\00\00\00\00\2c\00\00\01\40\00\01\00\00\00\00\01\6c\00\00\08\00\00\03\00\00\00\00\09\6c\00\00\00\08\00\00\00\00\00\00\00\0b\00\00\00\1b\00\00\00\62\26\11\91\0a         # 2420,1 User defined data
+(0043,102c) SS 0                                                  # 2,1 Effective echo spacing
+(0043,102d) SH (no value)                                         # 0,1 Filter Mode (String slop field 1 in legacy GE MR
+(0043,102e) SH (no value)                                         # 0,1 String slop field 2
+(0043,102f) SS 0                                                  # 2,1 Image Type (real, imaginary, phase, magnitude)
+(0043,1030) SS 0                                                  # 2,1 Vas collapse flag
+(0043,1032) SS 2                                                  # 2,1 Vas flags
+(0043,1033) FL 0                                                  # 4,1 Neg_scanspacing
+(0043,1034) IS [1200]                                             # 4,1 Offset Frequency
+(0043,1035) UL 0                                                  # 4,1 User_usage_tag
+(0043,1036) UL 0                                                  # 4,1 User_fill_map_MSW
+(0043,1037) UL 0                                                  # 4,1 User_fill_map_LSW
+(0043,1038) FL 0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0         # 96,24 User data 25...User data 48 {User48=Effective Resolution for spiral}
+(0043,1039) IS [  0\ 0\ 0\ 7]                                     # 12,4 Slop_int_6... slop_int_9
+(0043,1060) IS [  0\ 0\ 0\10\ 0\ 0\ 0\ 0]                         # 24,8 Slop_int_10...slop_int_17
+(0043,1061) UI [1.2.840.113619.2.5.1762386977.1328.985934491.590]         # 48,1 Scanner Study Entity UID
+(0043,1062) SH [XXXX]                                             # 4,1 Scanner Study ID
+(0043,106f) DS [ 0\0.000000\0.000000]                             # 20,3-4 Scanner Table Entry (single gradient coil systems only)/Scanner Table Entry + Gradient Coil Selected
+(7fe0,0000) UL 4294967295                                         # 4,1 Generic Group Length
+(7fe0,0010) OB                                                    # u/l,1 Pixel Data
+  (fffe,e000)&nbsp;?? []                           # 0,1 Item
+  (fffe,e000)&nbsp;?? ff\d8\ff\c4\00\24\00\00\02\02\03\01\01\01\01\00\01\05\00\00\00\00\00\03\04\02\05\00\01\06\07\08         # 45466,1 Item
+(fffe,e0dd) 0
+</pre>
+<h2> <span class="mw-headline" id="SIEMENS_CSA_Header"> SIEMENS CSA Header </span></h2>
+<pre>$ gdcmdump --csa MR_SIEMENS_forceLoad29-1010_29-1020.dcm
+</pre>
+<pre>(0029,0010)siemens csa header
+Image shadow data (0029,xx10)
+
+0 - 'EchoLinePosition' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '64      '
+1 - 'EchoColumnPosition' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '64      '
+2 - 'EchoPartitionPosition' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '32      '
+3 - 'UsedChannelMask' VM 1, VR UL, SyngoDT 9, NoOfItems 6, Data '255     '
+4 - 'Actual3DImaPartNumber' VM 1, VR IS, SyngoDT 6, NoOfItems 0, Data 
+5 - 'ICE_Dims' VM 1, VR LO, SyngoDT 19, NoOfItems 6, Data 'X_1_1_1_1_1_1_31_1_1_1_1_19'
+6 - 'B_value' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '0       '
+7 - 'Filter1' VM 1, VR IS, SyngoDT 6, NoOfItems 0, Data 
+8 - 'Filter2' VM 1, VR IS, SyngoDT 6, NoOfItems 0, Data 
+9 - 'ProtocolSliceNumber' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '60      '
+10 - 'RealDwellTime' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '2800    '
+11 - 'PixelFile' VM 1, VR UN, SyngoDT 0, NoOfItems 0, Data 
+12 - 'PixelFileName' VM 1, VR UN, SyngoDT 0, NoOfItems 0, Data 
+13 - 'SliceMeasurementDuration' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '122.50000000'
+14 - 'SequenceMask' VM 1, VR UL, SyngoDT 9, NoOfItems 6, Data '134217728'
+15 - 'AcquisitionMatrixText' VM 1, VR SH, SyngoDT 22, NoOfItems 6, Data '128*128'
+16 - 'MeasuredFourierLines' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '127     '
+17 - 'FlowEncodingDirection' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '0       '
+18 - 'FlowVenc' VM 1, VR FD, SyngoDT 4, NoOfItems 6, Data '0.00000000'
+19 - 'PhaseEncodingDirectionPositive' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '1       '
+20 - 'NumberOfImagesInMosaic' VM 1, VR US, SyngoDT 10, NoOfItems 0, Data 
+21 - 'DiffusionGradientDirection' VM 3, VR FD, SyngoDT 4, NoOfItems 0, Data 
+22 - 'ImageGroup' VM 1, VR US, SyngoDT 10, NoOfItems 6, Data '0       '
+23 - 'SliceNormalVector' VM 3, VR FD, SyngoDT 4, NoOfItems 0, Data 
+24 - 'DiffusionDirectionality' VM 1, VR CS, SyngoDT 16, NoOfItems 6, Data 'NONE'
+25 - 'TimeAfterStart' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '4.23000000'
+26 - 'FlipAngle' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+27 - 'SequenceName' VM 1, VR SH, SyngoDT 22, NoOfItems 0, Data 
+28 - 'RepetitionTime' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+29 - 'EchoTime' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+30 - 'NumberOfAverages' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+31 - 'VoxelThickness' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+32 - 'VoxelPhaseFOV' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+33 - 'VoxelReadoutFOV' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+34 - 'VoxelPositionSag' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+35 - 'VoxelPositionCor' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+36 - 'VoxelPositionTra' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+37 - 'VoxelNormalSag' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+38 - 'VoxelNormalCor' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+39 - 'VoxelNormalTra' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+40 - 'VoxelInPlaneRot' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+41 - 'ImagePositionPatient' VM 3, VR DS, SyngoDT 3, NoOfItems 0, Data 
+42 - 'ImageOrientationPatient' VM 6, VR DS, SyngoDT 3, NoOfItems 0, Data 
+43 - 'PixelSpacing' VM 2, VR DS, SyngoDT 3, NoOfItems 0, Data 
+44 - 'SliceLocation' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+45 - 'SliceThickness' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+46 - 'SpectrumTextRegionLabel' VM 1, VR SH, SyngoDT 22, NoOfItems 0, Data 
+47 - 'Comp_Algorithm' VM 1, VR IS, SyngoDT 6, NoOfItems 0, Data 
+48 - 'Comp_Blended' VM 1, VR IS, SyngoDT 6, NoOfItems 0, Data 
+49 - 'Comp_ManualAdjusted' VM 1, VR IS, SyngoDT 6, NoOfItems 0, Data 
+50 - 'Comp_AutoParam' VM 1, VR LT, SyngoDT 20, NoOfItems 0, Data 
+51 - 'Comp_AdjustedParam' VM 1, VR LT, SyngoDT 20, NoOfItems 0, Data 
+52 - 'Comp_JobID' VM 1, VR LT, SyngoDT 20, NoOfItems 0, Data 
+53 - 'FMRIStimulInfo' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '-5555   '
+54 - 'FlowEncodingDirectionString' VM 1, VR SH, SyngoDT 22, NoOfItems 0, Data 
+55 - 'RepetitionTimeEffective' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+Series shadow data (0029,xx20)
+
+0 - 'UsedPatientWeight' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '93      '
+1 - 'NumberOfPrescans' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '0       '
+2 - 'TransmitterCalibration' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '296.46780396'
+3 - 'PhaseGradientAmplitude' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+4 - 'ReadoutGradientAmplitude' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+5 - 'SelectionGradientAmplitude' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+6 - 'GradientDelayTime' VM 3, VR DS, SyngoDT 3, NoOfItems 6, Data '15.00000000'\'14.00000000'\'10.00000000'
+7 - 'RfWatchdogMask' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '0       '
+8 - 'RfPowerErrorIndicator' VM 1, VR DS, SyngoDT 3, NoOfItems 0, Data 
+9 - 'SarWholeBody' VM 3, VR DS, SyngoDT 3, NoOfItems 6, Data '2.00000000'\'0.18362156'
+10 - 'Sed' VM 3, VR DS, SyngoDT 3, NoOfItems 6, Data '-9999.00000000'\'30.27681923'\'169.51280212'
+11 - 'SequenceFileOwner' VM 1, VR SH, SyngoDT 22, NoOfItems 6, Data 'SIEMENS'
+12 - 'Stim_mon_mode' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '2       '
+13 - 'Operation_mode_flag' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '2       '
+14 - 'dBdt_max' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+15 - 't_puls_max' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+16 - 'dBdt_thresh' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+17 - 'dBdt_limit' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'
+18 - 'SW_korr_faktor' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '1.00000000'
+19 - 'Stim_max_online' VM 3, VR DS, SyngoDT 3, NoOfItems 6, Data '0.00000000'\'0.00000000'\'0.00000000'
+20 - 'Stim_max_ges_norm_online' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '0.86077642'
+21 - 'Stim_lim' VM 3, VR DS, SyngoDT 3, NoOfItems 6, Data '27.43960762'\'21.45542145'\'22.12137222'
+22 - 'Stim_faktor' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '1.00000000'
+23 - 'CoilForGradient' VM 1, VR SH, SyngoDT 22, NoOfItems 6, Data 'Sonata'
+24 - 'CoilTuningReflection' VM 2, VR DS, SyngoDT 3, NoOfItems 6, Data '0.01325544'\'0.15239207'
+25 - 'CoilId' VM 5, VR IS, SyngoDT 6, NoOfItems 6, Data '255     '\'238     '\'238     '\'170     '\'164     '
+26 - 'MiscSequenceParam' VM 32, VR IS, SyngoDT 6, NoOfItems 36, Data '40      '\'1       '\'1       '\'12      '\'0       '\'3       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'0       '\'1       '\'6982    '
+27 - 'MrProtocolVersion' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '12510002'
+28 - 'MrProtocol' VM 1, VR UN, SyngoDT 0, NoOfItems 6, Data '### ASCCONV BEGIN ###
+ulVersion                                = 0xbee332
+tSequenceFileName                        = "%SiemensSeq%\ep2d_diff"
+tProtocolName                            = "Diffusion 12 Direction"
+tReferenceImage0                         = "1.3.12.2.1107.5.2.13.20594.30000005072314083676500000000"
+tReferenceImage1                         = "1.3.12.2.1107.5.2.13.20594.30000005072314083676500000002"
+tReferenceImage2                         = "1.3.12.2.1107.5.2.13.20594.30000005072314083676500000001"
+ucScanRegionPosValid                     = 0x1
+sProtConsistencyInfo.tBaselineString     = "N4_VA25A_LATEST_20040724"
+sProtConsistencyInfo.flNominalB0         = 2.89362
+sProtConsistencyInfo.flGMax              = 26
+sProtConsistencyInfo.flRiseTime          = 5
+sGRADSPEC.sEddyCompensationX.aflAmplitude[0] = 0.00739244
+sGRADSPEC.sEddyCompensationX.aflAmplitude[1] = 0.0678112
+sGRADSPEC.sEddyCompensationX.aflAmplitude[2] = -0.00927549
+sGRADSPEC.sEddyCompensationX.aflAmplitude[3] = 0.00125933
+sGRADSPEC.sEddyCompensationX.aflAmplitude[4] = 0.00154965
+sGRADSPEC.sEddyCompensationX.aflTimeConstant[0] = 1.8416
+sGRADSPEC.sEddyCompensationX.aflTimeConstant[1] = 0.508365
+sGRADSPEC.sEddyCompensationX.aflTimeConstant[2] = 0.274496
+sGRADSPEC.sEddyCompensationX.aflTimeConstant[3] = 0.0496371
+sGRADSPEC.sEddyCompensationX.aflTimeConstant[4] = 0.00105433
+sGRADSPEC.sEddyCompensationY.aflAmplitude[0] = 0.00468504
+sGRADSPEC.sEddyCompensationY.aflAmplitude[1] = 0.0586079
+sGRADSPEC.sEddyCompensationY.aflAmplitude[2] = -0.00587229
+sGRADSPEC.sEddyCompensationY.aflAmplitude[3] = 0.00048035
+sGRADSPEC.sEddyCompensationY.aflAmplitude[4] = 0.00164039
+sGRADSPEC.sEddyCompensationY.aflTimeConstant[0] = 2.15416
+sGRADSPEC.sEddyCompensationY.aflTimeConstant[1] = 0.554434
+sGRADSPEC.sEddyCompensationY.aflTimeConstant[2] = 0.342555
+sGRADSPEC.sEddyCompensationY.aflTimeConstant[3] = 0.0499486
+sGRADSPEC.sEddyCompensationY.aflTimeConstant[4] = 0.00173766
+sGRADSPEC.sEddyCompensationZ.aflAmplitude[0] = 0.0122189
+sGRADSPEC.sEddyCompensationZ.aflAmplitude[1] = 0.0468497
+sGRADSPEC.sEddyCompensationZ.aflAmplitude[2] = 0.00227264
+sGRADSPEC.sEddyCompensationZ.aflAmplitude[3] = -0.000475042
+sGRADSPEC.sEddyCompensationZ.aflAmplitude[4] = 0.00127623
+sGRADSPEC.sEddyCompensationZ.aflTimeConstant[0] = 4.09441
+sGRADSPEC.sEddyCompensationZ.aflTimeConstant[1] = 0.730355
+sGRADSPEC.sEddyCompensationZ.aflTimeConstant[2] = 0.0454255
+sGRADSPEC.sEddyCompensationZ.aflTimeConstant[3] = 0.0148336
+sGRADSPEC.sEddyCompensationZ.aflTimeConstant[4] = 0.00199527
+sGRADSPEC.bEddyCompensationValid         = 1
+sGRADSPEC.sB0CompensationX.aflAmplitude[0] = 0.128924
+sGRADSPEC.sB0CompensationX.aflAmplitude[1] = -0.00315916
+sGRADSPEC.sB0CompensationX.aflAmplitude[2] = -0.00248169
+sGRADSPEC.sB0CompensationX.aflTimeConstant[0] = 1.13872
+sGRADSPEC.sB0CompensationX.aflTimeConstant[1] = 0.0344167
+sGRADSPEC.sB0CompensationX.aflTimeConstant[2] = 0.00121443
+sGRADSPEC.sB0CompensationY.aflAmplitude[0] = 0.206763
+sGRADSPEC.sB0CompensationY.aflAmplitude[1] = 0.0282657
+sGRADSPEC.sB0CompensationY.aflAmplitude[2] = -0.0912243
+sGRADSPEC.sB0CompensationY.aflTimeConstant[0] = 0.754838
+sGRADSPEC.sB0CompensationY.aflTimeConstant[1] = 0.00509838
+sGRADSPEC.sB0CompensationY.aflTimeConstant[2] = 0.00199991
+sGRADSPEC.sB0CompensationZ.aflAmplitude[0] = 0.175823
+sGRADSPEC.sB0CompensationZ.aflAmplitude[1] = 0.0139884
+sGRADSPEC.sB0CompensationZ.aflAmplitude[2] = -0.0514207
+sGRADSPEC.sB0CompensationZ.aflTimeConstant[0] = 0.531606
+sGRADSPEC.sB0CompensationZ.aflTimeConstant[1] = 0.021926
+sGRADSPEC.sB0CompensationZ.aflTimeConstant[2] = 0.00199988
+sGRADSPEC.bB0CompensationValid           = 1
+sGRADSPEC.sCrossTermCompensationXY.aflAmplitude[0] = 0.00108553
+sGRADSPEC.sCrossTermCompensationXY.aflTimeConstant[0] = 0.33032
+sGRADSPEC.sCrossTermCompensationXZ.aflAmplitude[0] = -8.78282e-005
+sGRADSPEC.sCrossTermCompensationXZ.aflTimeConstant[0] = 2
+sGRADSPEC.sCrossTermCompensationYZ.aflAmplitude[0] = 0.000371044
+sGRADSPEC.sCrossTermCompensationYZ.aflTimeConstant[0] = 0.53203
+sGRADSPEC.sCrossTermCompensationZX.aflAmplitude[0] = -0.000325781
+sGRADSPEC.sCrossTermCompensationZX.aflTimeConstant[0] = 0.64081
+sGRADSPEC.sCrossTermCompensationZY.aflAmplitude[0] = -0.000319449
+sGRADSPEC.sCrossTermCompensationZY.aflTimeConstant[0] = 0.469473
+sGRADSPEC.bCrossTermCompensationValid    = 1
+sGRADSPEC.lOffsetX                       = -1309
+sGRADSPEC.lOffsetY                       = 897
+sGRADSPEC.lOffsetZ                       = 2587
+sGRADSPEC.bOffsetValid                   = 1
+sGRADSPEC.lDelayX                        = 15
+sGRADSPEC.lDelayY                        = 14
+sGRADSPEC.lDelayZ                        = 10
+sGRADSPEC.bDelayValid                    = 1
+sGRADSPEC.flSensitivityX                 = 0.000351305
+sGRADSPEC.flSensitivityY                 = 0.00036535
+sGRADSPEC.flSensitivityZ                 = 0.00035985
+sGRADSPEC.bSensitivityValid              = 1
+sGRADSPEC.flGSWDMinRiseTime              = 5
+sGRADSPEC.alShimCurrent[0]               = 699
+sGRADSPEC.alShimCurrent[1]               = 81
+sGRADSPEC.alShimCurrent[2]               = -461
+sGRADSPEC.alShimCurrent[3]               = -466
+sGRADSPEC.alShimCurrent[4]               = -104
+sGRADSPEC.bShimCurrentValid              = 1
+sGRADSPEC.ucMode                         = 0x11
+sTXSPEC.asNucleusInfo[0].tNucleus        = "1H"
+sTXSPEC.asNucleusInfo[0].lFrequency      = 123249244
+sTXSPEC.asNucleusInfo[0].bFrequencyValid = 1
+sTXSPEC.asNucleusInfo[0].flReferenceAmplitude = 296.468
+sTXSPEC.asNucleusInfo[0].bReferenceAmplitudeValid = 1
+sTXSPEC.asNucleusInfo[0].flAmplitudeCorrection = 1
+sTXSPEC.asNucleusInfo[0].bAmplitudeCorrectionValid = 1
+sTXSPEC.asNucleusInfo[1].bFrequencyValid = 1
+sTXSPEC.asNucleusInfo[1].bReferenceAmplitudeValid = 1
+sTXSPEC.asNucleusInfo[1].bAmplitudeCorrectionValid = 1
+sTXSPEC.aRFPULSE[0].tName                = "SincRFPulse"
+sTXSPEC.aRFPULSE[0].bAmplitudeValid      = 0x1
+sTXSPEC.aRFPULSE[0].flAmplitude          = 302.246
+sTXSPEC.aRFPULSE[1].tName                = "RTEIdentDRF1"
+sTXSPEC.aRFPULSE[1].bAmplitudeValid      = 0x1
+sTXSPEC.aRFPULSE[1].flAmplitude          = 237.11
+sTXSPEC.aRFPULSE[2].tName                = "RTEIdentDRF2"
+sTXSPEC.aRFPULSE[2].bAmplitudeValid      = 0x1
+sTXSPEC.aRFPULSE[2].flAmplitude          = 237.11
+sTXSPEC.aRFPULSE[3].tName                = "SLoopFCSatNS"
+sTXSPEC.aRFPULSE[3].bAmplitudeValid      = 0x1
+sTXSPEC.aRFPULSE[3].flAmplitude          = 73.0825
+sTXSPEC.lNoOfTraPulses                   = 4
+sTXSPEC.lBTB1SerialCapacity              = 22
+sTXSPEC.lBTB2SerialCapacity              = 20
+sTXSPEC.bBTBValid                        = 1
+sTXSPEC.flKDynMagnitudeMin               = 0.5
+sTXSPEC.flKDynMagnitudeMax               = 1.5
+sTXSPEC.flKDynMagnitudeClipLow           = 0.96
+sTXSPEC.flKDynMagnitudeClipHigh          = 1.04
+sTXSPEC.flKDynPhaseMax                   = 0.698132
+sTXSPEC.flKDynPhaseClip                  = 0.174533
+sTXSPEC.bKDynValid                       = 1
+sTXSPEC.ucRFPulseType                    = 0x2
+sTXSPEC.ucExcitMode                      = 0x1
+sTXSPEC.ucSimultaneousExcitation         = 0x1
+sRXSPEC.lGain                            = 1
+sRXSPEC.bGainValid                       = 1
+sRXSPEC.aFFT_SCALE[0].lRxChannel         = 1
+sRXSPEC.aFFT_SCALE[0].flFactor           = 1.64415
+sRXSPEC.aFFT_SCALE[0].bValid             = 1
+sRXSPEC.aFFT_SCALE[1].lRxChannel         = 2
+sRXSPEC.aFFT_SCALE[1].flFactor           = 1.75977
+sRXSPEC.aFFT_SCALE[1].bValid             = 1
+sRXSPEC.aFFT_SCALE[2].lRxChannel         = 3
+sRXSPEC.aFFT_SCALE[2].flFactor           = 1.89165
+sRXSPEC.aFFT_SCALE[2].bValid             = 1
+sRXSPEC.aFFT_SCALE[3].lRxChannel         = 4
+sRXSPEC.aFFT_SCALE[3].flFactor           = 1.80276
+sRXSPEC.aFFT_SCALE[3].bValid             = 1
+sRXSPEC.aFFT_SCALE[4].lRxChannel         = 5
+sRXSPEC.aFFT_SCALE[4].flFactor           = 1.72153
+sRXSPEC.aFFT_SCALE[4].bValid             = 1
+sRXSPEC.aFFT_SCALE[5].lRxChannel         = 6
+sRXSPEC.aFFT_SCALE[5].flFactor           = 1.82103
+sRXSPEC.aFFT_SCALE[5].bValid             = 1
+sRXSPEC.aFFT_SCALE[6].lRxChannel         = 7
+sRXSPEC.aFFT_SCALE[6].flFactor           = 1.69567
+sRXSPEC.aFFT_SCALE[6].bValid             = 1
+sRXSPEC.aFFT_SCALE[7].lRxChannel         = 8
+sRXSPEC.aFFT_SCALE[7].flFactor           = 1.79441
+sRXSPEC.aFFT_SCALE[7].bValid             = 1
+sRXSPEC.bVariCapVoltagesValid            = 1
+sRXSPEC.alDwellTime[0]                   = 2800
+sAdjFreSpec.ulMode                       = 0x1
+sAdjShimSpec.ulMode                      = 0x2
+sAdjWatSupSpec.ulMode                    = 0x1
+ucEnableNoiseAdjust                      = 0x1
+alTR[0]                                  = 8600000
+alTI[0]                                  = 2500000
+lContrasts                               = 1
+alTE[0]                                  = 100000
+acFlowComp[0]                            = 1
+lCombinedEchoes                          = 1
+sSliceArray.asSlice[0].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[0].sPosition.dTra    = -43.05084746
+sSliceArray.asSlice[0].sNormal.dTra      = 1
+sSliceArray.asSlice[0].dThickness        = 2
+sSliceArray.asSlice[0].dPhaseFOV         = 256
+sSliceArray.asSlice[0].dReadoutFOV       = 256
+sSliceArray.asSlice[1].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[1].sPosition.dTra    = -41.05084746
+sSliceArray.asSlice[1].sNormal.dTra      = 1
+sSliceArray.asSlice[1].dThickness        = 2
+sSliceArray.asSlice[1].dPhaseFOV         = 256
+sSliceArray.asSlice[1].dReadoutFOV       = 256
+sSliceArray.asSlice[2].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[2].sPosition.dTra    = -39.05084746
+sSliceArray.asSlice[2].sNormal.dTra      = 1
+sSliceArray.asSlice[2].dThickness        = 2
+sSliceArray.asSlice[2].dPhaseFOV         = 256
+sSliceArray.asSlice[2].dReadoutFOV       = 256
+sSliceArray.asSlice[3].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[3].sPosition.dTra    = -37.05084746
+sSliceArray.asSlice[3].sNormal.dTra      = 1
+sSliceArray.asSlice[3].dThickness        = 2
+sSliceArray.asSlice[3].dPhaseFOV         = 256
+sSliceArray.asSlice[3].dReadoutFOV       = 256
+sSliceArray.asSlice[4].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[4].sPosition.dTra    = -35.05084746
+sSliceArray.asSlice[4].sNormal.dTra      = 1
+sSliceArray.asSlice[4].dThickness        = 2
+sSliceArray.asSlice[4].dPhaseFOV         = 256
+sSliceArray.asSlice[4].dReadoutFOV       = 256
+sSliceArray.asSlice[5].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[5].sPosition.dTra    = -33.05084746
+sSliceArray.asSlice[5].sNormal.dTra      = 1
+sSliceArray.asSlice[5].dThickness        = 2
+sSliceArray.asSlice[5].dPhaseFOV         = 256
+sSliceArray.asSlice[5].dReadoutFOV       = 256
+sSliceArray.asSlice[6].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[6].sPosition.dTra    = -31.05084746
+sSliceArray.asSlice[6].sNormal.dTra      = 1
+sSliceArray.asSlice[6].dThickness        = 2
+sSliceArray.asSlice[6].dPhaseFOV         = 256
+sSliceArray.asSlice[6].dReadoutFOV       = 256
+sSliceArray.asSlice[7].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[7].sPosition.dTra    = -29.05084746
+sSliceArray.asSlice[7].sNormal.dTra      = 1
+sSliceArray.asSlice[7].dThickness        = 2
+sSliceArray.asSlice[7].dPhaseFOV         = 256
+sSliceArray.asSlice[7].dReadoutFOV       = 256
+sSliceArray.asSlice[8].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[8].sPosition.dTra    = -27.05084746
+sSliceArray.asSlice[8].sNormal.dTra      = 1
+sSliceArray.asSlice[8].dThickness        = 2
+sSliceArray.asSlice[8].dPhaseFOV         = 256
+sSliceArray.asSlice[8].dReadoutFOV       = 256
+sSliceArray.asSlice[9].sPosition.dCor    = -51.52542373
+sSliceArray.asSlice[9].sPosition.dTra    = -25.05084746
+sSliceArray.asSlice[9].sNormal.dTra      = 1
+sSliceArray.asSlice[9].dThickness        = 2
+sSliceArray.asSlice[9].dPhaseFOV         = 256
+sSliceArray.asSlice[9].dReadoutFOV       = 256
+sSliceArray.asSlice[10].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[10].sPosition.dTra   = -23.05084746
+sSliceArray.asSlice[10].sNormal.dTra     = 1
+sSliceArray.asSlice[10].dThickness       = 2
+sSliceArray.asSlice[10].dPhaseFOV        = 256
+sSliceArray.asSlice[10].dReadoutFOV      = 256
+sSliceArray.asSlice[11].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[11].sPosition.dTra   = -21.05084746
+sSliceArray.asSlice[11].sNormal.dTra     = 1
+sSliceArray.asSlice[11].dThickness       = 2
+sSliceArray.asSlice[11].dPhaseFOV        = 256
+sSliceArray.asSlice[11].dReadoutFOV      = 256
+sSliceArray.asSlice[12].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[12].sPosition.dTra   = -19.05084746
+sSliceArray.asSlice[12].sNormal.dTra     = 1
+sSliceArray.asSlice[12].dThickness       = 2
+sSliceArray.asSlice[12].dPhaseFOV        = 256
+sSliceArray.asSlice[12].dReadoutFOV      = 256
+sSliceArray.asSlice[13].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[13].sPosition.dTra   = -17.05084746
+sSliceArray.asSlice[13].sNormal.dTra     = 1
+sSliceArray.asSlice[13].dThickness       = 2
+sSliceArray.asSlice[13].dPhaseFOV        = 256
+sSliceArray.asSlice[13].dReadoutFOV      = 256
+sSliceArray.asSlice[14].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[14].sPosition.dTra   = -15.05084746
+sSliceArray.asSlice[14].sNormal.dTra     = 1
+sSliceArray.asSlice[14].dThickness       = 2
+sSliceArray.asSlice[14].dPhaseFOV        = 256
+sSliceArray.asSlice[14].dReadoutFOV      = 256
+sSliceArray.asSlice[15].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[15].sPosition.dTra   = -13.05084746
+sSliceArray.asSlice[15].sNormal.dTra     = 1
+sSliceArray.asSlice[15].dThickness       = 2
+sSliceArray.asSlice[15].dPhaseFOV        = 256
+sSliceArray.asSlice[15].dReadoutFOV      = 256
+sSliceArray.asSlice[16].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[16].sPosition.dTra   = -11.05084746
+sSliceArray.asSlice[16].sNormal.dTra     = 1
+sSliceArray.asSlice[16].dThickness       = 2
+sSliceArray.asSlice[16].dPhaseFOV        = 256
+sSliceArray.asSlice[16].dReadoutFOV      = 256
+sSliceArray.asSlice[17].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[17].sPosition.dTra   = -9.05084746
+sSliceArray.asSlice[17].sNormal.dTra     = 1
+sSliceArray.asSlice[17].dThickness       = 2
+sSliceArray.asSlice[17].dPhaseFOV        = 256
+sSliceArray.asSlice[17].dReadoutFOV      = 256
+sSliceArray.asSlice[18].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[18].sPosition.dTra   = -7.05084746
+sSliceArray.asSlice[18].sNormal.dTra     = 1
+sSliceArray.asSlice[18].dThickness       = 2
+sSliceArray.asSlice[18].dPhaseFOV        = 256
+sSliceArray.asSlice[18].dReadoutFOV      = 256
+sSliceArray.asSlice[19].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[19].sPosition.dTra   = -5.05084746
+sSliceArray.asSlice[19].sNormal.dTra     = 1
+sSliceArray.asSlice[19].dThickness       = 2
+sSliceArray.asSlice[19].dPhaseFOV        = 256
+sSliceArray.asSlice[19].dReadoutFOV      = 256
+sSliceArray.asSlice[20].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[20].sPosition.dTra   = -3.05084746
+sSliceArray.asSlice[20].sNormal.dTra     = 1
+sSliceArray.asSlice[20].dThickness       = 2
+sSliceArray.asSlice[20].dPhaseFOV        = 256
+sSliceArray.asSlice[20].dReadoutFOV      = 256
+sSliceArray.asSlice[21].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[21].sPosition.dTra   = -1.05084746
+sSliceArray.asSlice[21].sNormal.dTra     = 1
+sSliceArray.asSlice[21].dThickness       = 2
+sSliceArray.asSlice[21].dPhaseFOV        = 256
+sSliceArray.asSlice[21].dReadoutFOV      = 256
+sSliceArray.asSlice[22].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[22].sPosition.dTra   = 0.94915254
+sSliceArray.asSlice[22].sNormal.dTra     = 1
+sSliceArray.asSlice[22].dThickness       = 2
+sSliceArray.asSlice[22].dPhaseFOV        = 256
+sSliceArray.asSlice[22].dReadoutFOV      = 256
+sSliceArray.asSlice[23].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[23].sPosition.dTra   = 2.94915254
+sSliceArray.asSlice[23].sNormal.dTra     = 1
+sSliceArray.asSlice[23].dThickness       = 2
+sSliceArray.asSlice[23].dPhaseFOV        = 256
+sSliceArray.asSlice[23].dReadoutFOV      = 256
+sSliceArray.asSlice[24].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[24].sPosition.dTra   = 4.94915254
+sSliceArray.asSlice[24].sNormal.dTra     = 1
+sSliceArray.asSlice[24].dThickness       = 2
+sSliceArray.asSlice[24].dPhaseFOV        = 256
+sSliceArray.asSlice[24].dReadoutFOV      = 256
+sSliceArray.asSlice[25].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[25].sPosition.dTra   = 6.94915254
+sSliceArray.asSlice[25].sNormal.dTra     = 1
+sSliceArray.asSlice[25].dThickness       = 2
+sSliceArray.asSlice[25].dPhaseFOV        = 256
+sSliceArray.asSlice[25].dReadoutFOV      = 256
+sSliceArray.asSlice[26].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[26].sPosition.dTra   = 8.94915254
+sSliceArray.asSlice[26].sNormal.dTra     = 1
+sSliceArray.asSlice[26].dThickness       = 2
+sSliceArray.asSlice[26].dPhaseFOV        = 256
+sSliceArray.asSlice[26].dReadoutFOV      = 256
+sSliceArray.asSlice[27].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[27].sPosition.dTra   = 10.94915254
+sSliceArray.asSlice[27].sNormal.dTra     = 1
+sSliceArray.asSlice[27].dThickness       = 2
+sSliceArray.asSlice[27].dPhaseFOV        = 256
+sSliceArray.asSlice[27].dReadoutFOV      = 256
+sSliceArray.asSlice[28].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[28].sPosition.dTra   = 12.94915254
+sSliceArray.asSlice[28].sNormal.dTra     = 1
+sSliceArray.asSlice[28].dThickness       = 2
+sSliceArray.asSlice[28].dPhaseFOV        = 256
+sSliceArray.asSlice[28].dReadoutFOV      = 256
+sSliceArray.asSlice[29].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[29].sPosition.dTra   = 14.94915254
+sSliceArray.asSlice[29].sNormal.dTra     = 1
+sSliceArray.asSlice[29].dThickness       = 2
+sSliceArray.asSlice[29].dPhaseFOV        = 256
+sSliceArray.asSlice[29].dReadoutFOV      = 256
+sSliceArray.asSlice[30].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[30].sPosition.dTra   = 16.94915254
+sSliceArray.asSlice[30].sNormal.dTra     = 1
+sSliceArray.asSlice[30].dThickness       = 2
+sSliceArray.asSlice[30].dPhaseFOV        = 256
+sSliceArray.asSlice[30].dReadoutFOV      = 256
+sSliceArray.asSlice[31].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[31].sPosition.dTra   = 18.94915254
+sSliceArray.asSlice[31].sNormal.dTra     = 1
+sSliceArray.asSlice[31].dThickness       = 2
+sSliceArray.asSlice[31].dPhaseFOV        = 256
+sSliceArray.asSlice[31].dReadoutFOV      = 256
+sSliceArray.asSlice[32].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[32].sPosition.dTra   = 20.94915254
+sSliceArray.asSlice[32].sNormal.dTra     = 1
+sSliceArray.asSlice[32].dThickness       = 2
+sSliceArray.asSlice[32].dPhaseFOV        = 256
+sSliceArray.asSlice[32].dReadoutFOV      = 256
+sSliceArray.asSlice[33].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[33].sPosition.dTra   = 22.94915254
+sSliceArray.asSlice[33].sNormal.dTra     = 1
+sSliceArray.asSlice[33].dThickness       = 2
+sSliceArray.asSlice[33].dPhaseFOV        = 256
+sSliceArray.asSlice[33].dReadoutFOV      = 256
+sSliceArray.asSlice[34].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[34].sPosition.dTra   = 24.94915254
+sSliceArray.asSlice[34].sNormal.dTra     = 1
+sSliceArray.asSlice[34].dThickness       = 2
+sSliceArray.asSlice[34].dPhaseFOV        = 256
+sSliceArray.asSlice[34].dReadoutFOV      = 256
+sSliceArray.asSlice[35].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[35].sPosition.dTra   = 26.94915254
+sSliceArray.asSlice[35].sNormal.dTra     = 1
+sSliceArray.asSlice[35].dThickness       = 2
+sSliceArray.asSlice[35].dPhaseFOV        = 256
+sSliceArray.asSlice[35].dReadoutFOV      = 256
+sSliceArray.asSlice[36].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[36].sPosition.dTra   = 28.94915254
+sSliceArray.asSlice[36].sNormal.dTra     = 1
+sSliceArray.asSlice[36].dThickness       = 2
+sSliceArray.asSlice[36].dPhaseFOV        = 256
+sSliceArray.asSlice[36].dReadoutFOV      = 256
+sSliceArray.asSlice[37].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[37].sPosition.dTra   = 30.94915254
+sSliceArray.asSlice[37].sNormal.dTra     = 1
+sSliceArray.asSlice[37].dThickness       = 2
+sSliceArray.asSlice[37].dPhaseFOV        = 256
+sSliceArray.asSlice[37].dReadoutFOV      = 256
+sSliceArray.asSlice[38].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[38].sPosition.dTra   = 32.94915254
+sSliceArray.asSlice[38].sNormal.dTra     = 1
+sSliceArray.asSlice[38].dThickness       = 2
+sSliceArray.asSlice[38].dPhaseFOV        = 256
+sSliceArray.asSlice[38].dReadoutFOV      = 256
+sSliceArray.asSlice[39].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[39].sPosition.dTra   = 34.94915254
+sSliceArray.asSlice[39].sNormal.dTra     = 1
+sSliceArray.asSlice[39].dThickness       = 2
+sSliceArray.asSlice[39].dPhaseFOV        = 256
+sSliceArray.asSlice[39].dReadoutFOV      = 256
+sSliceArray.asSlice[40].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[40].sPosition.dTra   = 36.94915254
+sSliceArray.asSlice[40].sNormal.dTra     = 1
+sSliceArray.asSlice[40].dThickness       = 2
+sSliceArray.asSlice[40].dPhaseFOV        = 256
+sSliceArray.asSlice[40].dReadoutFOV      = 256
+sSliceArray.asSlice[41].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[41].sPosition.dTra   = 38.94915254
+sSliceArray.asSlice[41].sNormal.dTra     = 1
+sSliceArray.asSlice[41].dThickness       = 2
+sSliceArray.asSlice[41].dPhaseFOV        = 256
+sSliceArray.asSlice[41].dReadoutFOV      = 256
+sSliceArray.asSlice[42].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[42].sPosition.dTra   = 40.94915254
+sSliceArray.asSlice[42].sNormal.dTra     = 1
+sSliceArray.asSlice[42].dThickness       = 2
+sSliceArray.asSlice[42].dPhaseFOV        = 256
+sSliceArray.asSlice[42].dReadoutFOV      = 256
+sSliceArray.asSlice[43].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[43].sPosition.dTra   = 42.94915254
+sSliceArray.asSlice[43].sNormal.dTra     = 1
+sSliceArray.asSlice[43].dThickness       = 2
+sSliceArray.asSlice[43].dPhaseFOV        = 256
+sSliceArray.asSlice[43].dReadoutFOV      = 256
+sSliceArray.asSlice[44].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[44].sPosition.dTra   = 44.94915254
+sSliceArray.asSlice[44].sNormal.dTra     = 1
+sSliceArray.asSlice[44].dThickness       = 2
+sSliceArray.asSlice[44].dPhaseFOV        = 256
+sSliceArray.asSlice[44].dReadoutFOV      = 256
+sSliceArray.asSlice[45].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[45].sPosition.dTra   = 46.94915254
+sSliceArray.asSlice[45].sNormal.dTra     = 1
+sSliceArray.asSlice[45].dThickness       = 2
+sSliceArray.asSlice[45].dPhaseFOV        = 256
+sSliceArray.asSlice[45].dReadoutFOV      = 256
+sSliceArray.asSlice[46].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[46].sPosition.dTra   = 48.94915254
+sSliceArray.asSlice[46].sNormal.dTra     = 1
+sSliceArray.asSlice[46].dThickness       = 2
+sSliceArray.asSlice[46].dPhaseFOV        = 256
+sSliceArray.asSlice[46].dReadoutFOV      = 256
+sSliceArray.asSlice[47].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[47].sPosition.dTra   = 50.94915254
+sSliceArray.asSlice[47].sNormal.dTra     = 1
+sSliceArray.asSlice[47].dThickness       = 2
+sSliceArray.asSlice[47].dPhaseFOV        = 256
+sSliceArray.asSlice[47].dReadoutFOV      = 256
+sSliceArray.asSlice[48].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[48].sPosition.dTra   = 52.94915254
+sSliceArray.asSlice[48].sNormal.dTra     = 1
+sSliceArray.asSlice[48].dThickness       = 2
+sSliceArray.asSlice[48].dPhaseFOV        = 256
+sSliceArray.asSlice[48].dReadoutFOV      = 256
+sSliceArray.asSlice[49].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[49].sPosition.dTra   = 54.94915254
+sSliceArray.asSlice[49].sNormal.dTra     = 1
+sSliceArray.asSlice[49].dThickness       = 2
+sSliceArray.asSlice[49].dPhaseFOV        = 256
+sSliceArray.asSlice[49].dReadoutFOV      = 256
+sSliceArray.asSlice[50].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[50].sPosition.dTra   = 56.94915254
+sSliceArray.asSlice[50].sNormal.dTra     = 1
+sSliceArray.asSlice[50].dThickness       = 2
+sSliceArray.asSlice[50].dPhaseFOV        = 256
+sSliceArray.asSlice[50].dReadoutFOV      = 256
+sSliceArray.asSlice[51].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[51].sPosition.dTra   = 58.94915254
+sSliceArray.asSlice[51].sNormal.dTra     = 1
+sSliceArray.asSlice[51].dThickness       = 2
+sSliceArray.asSlice[51].dPhaseFOV        = 256
+sSliceArray.asSlice[51].dReadoutFOV      = 256
+sSliceArray.asSlice[52].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[52].sPosition.dTra   = 60.94915254
+sSliceArray.asSlice[52].sNormal.dTra     = 1
+sSliceArray.asSlice[52].dThickness       = 2
+sSliceArray.asSlice[52].dPhaseFOV        = 256
+sSliceArray.asSlice[52].dReadoutFOV      = 256
+sSliceArray.asSlice[53].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[53].sPosition.dTra   = 62.94915254
+sSliceArray.asSlice[53].sNormal.dTra     = 1
+sSliceArray.asSlice[53].dThickness       = 2
+sSliceArray.asSlice[53].dPhaseFOV        = 256
+sSliceArray.asSlice[53].dReadoutFOV      = 256
+sSliceArray.asSlice[54].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[54].sPosition.dTra   = 64.94915254
+sSliceArray.asSlice[54].sNormal.dTra     = 1
+sSliceArray.asSlice[54].dThickness       = 2
+sSliceArray.asSlice[54].dPhaseFOV        = 256
+sSliceArray.asSlice[54].dReadoutFOV      = 256
+sSliceArray.asSlice[55].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[55].sPosition.dTra   = 66.94915254
+sSliceArray.asSlice[55].sNormal.dTra     = 1
+sSliceArray.asSlice[55].dThickness       = 2
+sSliceArray.asSlice[55].dPhaseFOV        = 256
+sSliceArray.asSlice[55].dReadoutFOV      = 256
+sSliceArray.asSlice[56].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[56].sPosition.dTra   = 68.94915254
+sSliceArray.asSlice[56].sNormal.dTra     = 1
+sSliceArray.asSlice[56].dThickness       = 2
+sSliceArray.asSlice[56].dPhaseFOV        = 256
+sSliceArray.asSlice[56].dReadoutFOV      = 256
+sSliceArray.asSlice[57].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[57].sPosition.dTra   = 70.94915254
+sSliceArray.asSlice[57].sNormal.dTra     = 1
+sSliceArray.asSlice[57].dThickness       = 2
+sSliceArray.asSlice[57].dPhaseFOV        = 256
+sSliceArray.asSlice[57].dReadoutFOV      = 256
+sSliceArray.asSlice[58].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[58].sPosition.dTra   = 72.94915254
+sSliceArray.asSlice[58].sNormal.dTra     = 1
+sSliceArray.asSlice[58].dThickness       = 2
+sSliceArray.asSlice[58].dPhaseFOV        = 256
+sSliceArray.asSlice[58].dReadoutFOV      = 256
+sSliceArray.asSlice[59].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[59].sPosition.dTra   = 74.94915254
+sSliceArray.asSlice[59].sNormal.dTra     = 1
+sSliceArray.asSlice[59].dThickness       = 2
+sSliceArray.asSlice[59].dPhaseFOV        = 256
+sSliceArray.asSlice[59].dReadoutFOV      = 256
+sSliceArray.asSlice[60].sPosition.dCor   = -51.52542373
+sSliceArray.asSlice[60].sPosition.dTra   = 76.94915254
+sSliceArray.asSlice[60].sNormal.dTra     = 1
+sSliceArray.asSlice[60].dThickness       = 2
+sSliceArray.asSlice[60].dPhaseFOV        = 256
+sSliceArray.asSlice[60].dReadoutFOV      = 256
+sSliceArray.anAsc[1]                     = 1
+sSliceArray.anAsc[2]                     = 2
+sSliceArray.anAsc[3]                     = 3
+sSliceArray.anAsc[4]                     = 4
+sSliceArray.anAsc[5]                     = 5
+sSliceArray.anAsc[6]                     = 6
+sSliceArray.anAsc[7]                     = 7
+sSliceArray.anAsc[8]                     = 8
+sSliceArray.anAsc[9]                     = 9
+sSliceArray.anAsc[10]                    = 10
+sSliceArray.anAsc[11]                    = 11
+sSliceArray.anAsc[12]                    = 12
+sSliceArray.anAsc[13]                    = 13
+sSliceArray.anAsc[14]                    = 14
+sSliceArray.anAsc[15]                    = 15
+sSliceArray.anAsc[16]                    = 16
+sSliceArray.anAsc[17]                    = 17
+sSliceArray.anAsc[18]                    = 18
+sSliceArray.anAsc[19]                    = 19
+sSliceArray.anAsc[20]                    = 20
+sSliceArray.anAsc[21]                    = 21
+sSliceArray.anAsc[22]                    = 22
+sSliceArray.anAsc[23]                    = 23
+sSliceArray.anAsc[24]                    = 24
+sSliceArray.anAsc[25]                    = 25
+sSliceArray.anAsc[26]                    = 26
+sSliceArray.anAsc[27]                    = 27
+sSliceArray.anAsc[28]                    = 28
+sSliceArray.anAsc[29]                    = 29
+sSliceArray.anAsc[30]                    = 30
+sSliceArray.anAsc[31]                    = 31
+sSliceArray.anAsc[32]                    = 32
+sSliceArray.anAsc[33]                    = 33
+sSliceArray.anAsc[34]                    = 34
+sSliceArray.anAsc[35]                    = 35
+sSliceArray.anAsc[36]                    = 36
+sSliceArray.anAsc[37]                    = 37
+sSliceArray.anAsc[38]                    = 38
+sSliceArray.anAsc[39]                    = 39
+sSliceArray.anAsc[40]                    = 40
+sSliceArray.anAsc[41]                    = 41
+sSliceArray.anAsc[42]                    = 42
+sSliceArray.anAsc[43]                    = 43
+sSliceArray.anAsc[44]                    = 44
+sSliceArray.anAsc[45]                    = 45
+sSliceArray.anAsc[46]                    = 46
+sSliceArray.anAsc[47]                    = 47
+sSliceArray.anAsc[48]                    = 48
+sSliceArray.anAsc[49]                    = 49
+sSliceArray.anAsc[50]                    = 50
+sSliceArray.anAsc[51]                    = 51
+sSliceArray.anAsc[52]                    = 52
+sSliceArray.anAsc[53]                    = 53
+sSliceArray.anAsc[54]                    = 54
+sSliceArray.anAsc[55]                    = 55
+sSliceArray.anAsc[56]                    = 56
+sSliceArray.anAsc[57]                    = 57
+sSliceArray.anAsc[58]                    = 58
+sSliceArray.anAsc[59]                    = 59
+sSliceArray.anAsc[60]                    = 60
+sSliceArray.anPos[1]                     = 1
+sSliceArray.anPos[2]                     = 2
+sSliceArray.anPos[3]                     = 3
+sSliceArray.anPos[4]                     = 4
+sSliceArray.anPos[5]                     = 5
+sSliceArray.anPos[6]                     = 6
+sSliceArray.anPos[7]                     = 7
+sSliceArray.anPos[8]                     = 8
+sSliceArray.anPos[9]                     = 9
+sSliceArray.anPos[10]                    = 10
+sSliceArray.anPos[11]                    = 11
+sSliceArray.anPos[12]                    = 12
+sSliceArray.anPos[13]                    = 13
+sSliceArray.anPos[14]                    = 14
+sSliceArray.anPos[15]                    = 15
+sSliceArray.anPos[16]                    = 16
+sSliceArray.anPos[17]                    = 17
+sSliceArray.anPos[18]                    = 18
+sSliceArray.anPos[19]                    = 19
+sSliceArray.anPos[20]                    = 20
+sSliceArray.anPos[21]                    = 21
+sSliceArray.anPos[22]                    = 22
+sSliceArray.anPos[23]                    = 23
+sSliceArray.anPos[24]                    = 24
+sSliceArray.anPos[25]                    = 25
+sSliceArray.anPos[26]                    = 26
+sSliceArray.anPos[27]                    = 27
+sSliceArray.anPos[28]                    = 28
+sSliceArray.anPos[29]                    = 29
+sSliceArray.anPos[30]                    = 30
+sSliceArray.anPos[31]                    = 31
+sSliceArray.anPos[32]                    = 32
+sSliceArray.anPos[33]                    = 33
+sSliceArray.anPos[34]                    = 34
+sSliceArray.anPos[35]                    = 35
+sSliceArray.anPos[36]                    = 36
+sSliceArray.anPos[37]                    = 37
+sSliceArray.anPos[38]                    = 38
+sSliceArray.anPos[39]                    = 39
+sSliceArray.anPos[40]                    = 40
+sSliceArray.anPos[41]                    = 41
+sSliceArray.anPos[42]                    = 42
+sSliceArray.anPos[43]                    = 43
+sSliceArray.anPos[44]                    = 44
+sSliceArray.anPos[45]                    = 45
+sSliceArray.anPos[46]                    = 46
+sSliceArray.anPos[47]                    = 47
+sSliceArray.anPos[48]                    = 48
+sSliceArray.anPos[49]                    = 49
+sSliceArray.anPos[50]                    = 50
+sSliceArray.anPos[51]                    = 51
+sSliceArray.anPos[52]                    = 52
+sSliceArray.anPos[53]                    = 53
+sSliceArray.anPos[54]                    = 54
+sSliceArray.anPos[55]                    = 55
+sSliceArray.anPos[56]                    = 56
+sSliceArray.anPos[57]                    = 57
+sSliceArray.anPos[58]                    = 58
+sSliceArray.anPos[59]                    = 59
+sSliceArray.anPos[60]                    = 60
+sSliceArray.lSize                        = 61
+sSliceArray.lConc                        = 1
+sSliceArray.ucMode                       = 0x4
+sSliceArray.ucImageNumbCor               = 0x1
+sSliceArray.ucImageNumbTra               = 0x1
+sSliceArray.sTSat.dThickness             = 50
+sGroupArray.asGroup[0].nSize             = 61
+sGroupArray.anMember[1]                  = 1
+sGroupArray.anMember[2]                  = 2
+sGroupArray.anMember[3]                  = 3
+sGroupArray.anMember[4]                  = 4
+sGroupArray.anMember[5]                  = 5
+sGroupArray.anMember[6]                  = 6
+sGroupArray.anMember[7]                  = 7
+sGroupArray.anMember[8]                  = 8
+sGroupArray.anMember[9]                  = 9
+sGroupArray.anMember[10]                 = 10
+sGroupArray.anMember[11]                 = 11
+sGroupArray.anMember[12]                 = 12
+sGroupArray.anMember[13]                 = 13
+sGroupArray.anMember[14]                 = 14
+sGroupArray.anMember[15]                 = 15
+sGroupArray.anMember[16]                 = 16
+sGroupArray.anMember[17]                 = 17
+sGroupArray.anMember[18]                 = 18
+sGroupArray.anMember[19]                 = 19
+sGroupArray.anMember[20]                 = 20
+sGroupArray.anMember[21]                 = 21
+sGroupArray.anMember[22]                 = 22
+sGroupArray.anMember[23]                 = 23
+sGroupArray.anMember[24]                 = 24
+sGroupArray.anMember[25]                 = 25
+sGroupArray.anMember[26]                 = 26
+sGroupArray.anMember[27]                 = 27
+sGroupArray.anMember[28]                 = 28
+sGroupArray.anMember[29]                 = 29
+sGroupArray.anMember[30]                 = 30
+sGroupArray.anMember[31]                 = 31
+sGroupArray.anMember[32]                 = 32
+sGroupArray.anMember[33]                 = 33
+sGroupArray.anMember[34]                 = 34
+sGroupArray.anMember[35]                 = 35
+sGroupArray.anMember[36]                 = 36
+sGroupArray.anMember[37]                 = 37
+sGroupArray.anMember[38]                 = 38
+sGroupArray.anMember[39]                 = 39
+sGroupArray.anMember[40]                 = 40
+sGroupArray.anMember[41]                 = 41
+sGroupArray.anMember[42]                 = 42
+sGroupArray.anMember[43]                 = 43
+sGroupArray.anMember[44]                 = 44
+sGroupArray.anMember[45]                 = 45
+sGroupArray.anMember[46]                 = 46
+sGroupArray.anMember[47]                 = 47
+sGroupArray.anMember[48]                 = 48
+sGroupArray.anMember[49]                 = 49
+sGroupArray.anMember[50]                 = 50
+sGroupArray.anMember[51]                 = 51
+sGroupArray.anMember[52]                 = 52
+sGroupArray.anMember[53]                 = 53
+sGroupArray.anMember[54]                 = 54
+sGroupArray.anMember[55]                 = 55
+sGroupArray.anMember[56]                 = 56
+sGroupArray.anMember[57]                 = 57
+sGroupArray.anMember[58]                 = 58
+sGroupArray.anMember[59]                 = 59
+sGroupArray.anMember[60]                 = 60
+sGroupArray.anMember[61]                 = -1
+sGroupArray.lSize                        = 1
+sGroupArray.sPSat.dThickness             = 50
+sGroupArray.sPSat.dGap                   = 10
+sAutoAlign.dAAMatrix[0]                  = 1
+sAutoAlign.dAAMatrix[5]                  = 1
+sAutoAlign.dAAMatrix[10]                 = 1
+sAutoAlign.dAAMatrix[15]                 = 1
+sNavigatorPara.ucRespComp                = 0x4
+sPrepPulses.ucFatSat                     = 0x1
+sPrepPulses.ucWaterSat                   = 0x4
+sPrepPulses.ucInversion                  = 0x4
+sPrepPulses.ucSatRecovery                = 0x1
+sPrepPulses.ucFatSatMode                 = 0x2
+sKSpace.lBaseResolution                  = 128
+sKSpace.lPhaseEncodingLines              = 128
+sKSpace.dPhaseResolution                 = 1
+sKSpace.lPartitions                      = 64
+sKSpace.lImagesPerSlab                   = 64
+sKSpace.dSliceResolution                 = 1
+sKSpace.ucPhasePartialFourier            = 0x10
+sKSpace.ucSlicePartialFourier            = 0x10
+sKSpace.ucAveragingMode                  = 0x2
+sKSpace.ucMultiSliceMode                 = 0x2
+sKSpace.ucDimension                      = 0x2
+sKSpace.unReordering                     = 0x1
+sFastImaging.lEPIFactor                  = 128
+sFastImaging.lTurboFactor                = 1
+sFastImaging.lSegments                   = 1
+sFastImaging.ulEnableRFSpoiling          = 0x1
+sPhysioImaging.lSignal1                  = 1
+sPhysioImaging.lMethod1                  = 1
+sPhysioImaging.lSignal2                  = 1
+sPhysioImaging.lMethod2                  = 1
+sPhysioImaging.lPhases                   = 1
+sPhysioImaging.lRetroGatedImages         = 16
+sPhysioImaging.sPhysioECG.lTriggerPulses = 1
+sPhysioImaging.sPhysioECG.lTriggerWindow = 5
+sPhysioImaging.sPhysioECG.lArrhythmiaDetection = 1
+sPhysioImaging.sPhysioECG.lCardiacGateOnThreshold = 100000
+sPhysioImaging.sPhysioECG.lCardiacGateOffThreshold = 700000
+sPhysioImaging.sPhysioPulse.lTriggerPulses = 1
+sPhysioImaging.sPhysioPulse.lTriggerWindow = 5
+sPhysioImaging.sPhysioPulse.lCardiacGateOnThreshold = 100000
+sPhysioImaging.sPhysioPulse.lCardiacGateOffThreshold = 700000
+sPhysioImaging.sPhysioExt.lTriggerPulses = 1
+sPhysioImaging.sPhysioExt.lTriggerWindow = 5
+sPhysioImaging.sPhysioExt.lCardiacGateOnThreshold = 100000
+sPhysioImaging.sPhysioExt.lCardiacGateOffThreshold = 700000
+sPhysioImaging.sPhysioResp.lRespGateThreshold = 20
+sPhysioImaging.sPhysioResp.lRespGatePhase = 2
+sPhysioImaging.sPhysioResp.dGatingRatio  = 0.3
+sSpecPara.lPhaseCyclingType              = 1
+sSpecPara.lPhaseEncodingType             = 1
+sSpecPara.lRFExcitationBandwidth         = 1
+sSpecPara.ucRemoveOversampling           = 0x1
+sSpecPara.lDecouplingType                = 1
+sSpecPara.lNOEType                       = 1
+sSpecPara.lExcitationType                = 1
+sSpecPara.lSpectralSuppression           = 1
+sDiffusion.lDiffWeightings               = 2
+sDiffusion.alBValue[1]                   = 1000
+sDiffusion.lNoiseLevel                   = 40
+sDiffusion.lDiffDirections               = 12
+sDiffusion.ulMode                        = 0x100
+sDiffusion.ucDiffWeightedImage           = 0x1
+sAngio.ucPCFlowMode                      = 0x2
+sAngio.ucTOFInflow                       = 0x4
+sEllipticalFilter.ucMode                 = 0x1
+sPat.lAccelFactPE                        = 2
+sPat.lAccelFact3D                        = 1
+sPat.lRefLinesPE                         = 24
+sPat.ucPATMode                           = 0x2
+sPat.ucRefScanMode                       = 0x4
+ucEnableIntro                            = 0x1
+ucDisableChangeStoreImages               = 0x1
+ucReconstructionMode                     = 0x1
+ucPHAPSMode                              = 0x1
+ucDixon                                  = 0x1
+lAverages                                = 1
+adFlipAngleDegree[0]                     = 90
+lScanTimeSec                             = 163
+lTotalScanTimeSec                        = 165
+dRefSNR                                  = 38314.57164
+dRefSNR_VOI                              = 38314.57164
+sCOIL_SELECT_MEAS.asList[0].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[0].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[0].sCoilElementID.tElement = "PH3"
+sCOIL_SELECT_MEAS.asList[0].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[0].lRxChannelConnected = 1
+sCOIL_SELECT_MEAS.asList[1].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[1].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[1].sCoilElementID.tElement = "PH1"
+sCOIL_SELECT_MEAS.asList[1].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[1].lRxChannelConnected = 2
+sCOIL_SELECT_MEAS.asList[2].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[2].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[2].sCoilElementID.tElement = "PH7"
+sCOIL_SELECT_MEAS.asList[2].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[2].lRxChannelConnected = 3
+sCOIL_SELECT_MEAS.asList[3].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[3].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[3].sCoilElementID.tElement = "PH5"
+sCOIL_SELECT_MEAS.asList[3].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[3].lRxChannelConnected = 4
+sCOIL_SELECT_MEAS.asList[4].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[4].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[4].sCoilElementID.tElement = "PH4"
+sCOIL_SELECT_MEAS.asList[4].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[4].lRxChannelConnected = 5
+sCOIL_SELECT_MEAS.asList[5].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[5].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[5].sCoilElementID.tElement = "PH2"
+sCOIL_SELECT_MEAS.asList[5].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[5].lRxChannelConnected = 6
+sCOIL_SELECT_MEAS.asList[6].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[6].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[6].sCoilElementID.tElement = "PH8"
+sCOIL_SELECT_MEAS.asList[6].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[6].lRxChannelConnected = 7
+sCOIL_SELECT_MEAS.asList[7].sCoilElementID.tCoilID = "8_Channel_Head"
+sCOIL_SELECT_MEAS.asList[7].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_MEAS.asList[7].sCoilElementID.tElement = "PH6"
+sCOIL_SELECT_MEAS.asList[7].lElementSelected = 1
+sCOIL_SELECT_MEAS.asList[7].lRxChannelConnected = 8
+sCOIL_SELECT_MEAS.sCOILPLUGS.aulPlugId[0] = 0xff
+sCOIL_SELECT_MEAS.sCOILPLUGS.aulPlugId[1] = 0xee
+sCOIL_SELECT_MEAS.sCOILPLUGS.aulPlugId[2] = 0xee
+sCOIL_SELECT_MEAS.sCOILPLUGS.aulPlugId[3] = 0xaa
+sCOIL_SELECT_MEAS.sCOILPLUGS.aulPlugId[4] = 0xa4
+sCOIL_SELECT_MEAS.sCOILPLUGS.auiNmbrOfNibbles[0] = 0x2
+sCOIL_SELECT_MEAS.sCOILPLUGS.auiNmbrOfNibbles[1] = 0x2
+sCOIL_SELECT_MEAS.sCOILPLUGS.auiNmbrOfNibbles[2] = 0x2
+sCOIL_SELECT_MEAS.sCOILPLUGS.auiNmbrOfNibbles[3] = 0x2
+sCOIL_SELECT_MEAS.sCOILPLUGS.auiNmbrOfNibbles[4] = 0x2
+sCOIL_SELECT_UI.asList[0].sCoilElementID.tCoilID = "CP_HeadArray"
+sCOIL_SELECT_UI.asList[0].sCoilElementID.lCoilCopy = 1
+sCOIL_SELECT_UI.asList[0].sCoilElementID.tElement = "HE"
+sCOIL_SELECT_UI.asList[0].lElementSelected = 1
+sCOIL_SELECT_UI.asList[0].lRxChannelConnected = 1
+sEFISPEC.bEFIDataValid                   = 1
+### ASCCONV END ###
+'
+29 - 'DataFileName' VM 1, VR LO, SyngoDT 19, NoOfItems 0, Data 
+30 - 'RepresentativeImage' VM 1, VR UI, SyngoDT 25, NoOfItems 0, Data 
+31 - 'PositivePCSDirections' VM 1, VR SH, SyngoDT 22, NoOfItems 6, Data '+LPH'
+32 - 'RelTablePosition' VM 3, VR IS, SyngoDT 6, NoOfItems 6, Data '0       '\'0       '\'0       '
+33 - 'ReadoutOS' VM 1, VR FD, SyngoDT 4, NoOfItems 6, Data '2.00000000'
+34 - 'LongModelName' VM 1, VR LO, SyngoDT 19, NoOfItems 6, Data 'Trio'
+35 - 'SliceArrayConcatenations' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '1       '
+36 - 'SliceResolution' VM 1, VR DS, SyngoDT 3, NoOfItems 6, Data '1.00000000'
+37 - 'MrEvaProtocol' VM 1, VR UN, SyngoDT 0, NoOfItems 0, Data 
+38 - 'AbsTablePosition' VM 1, VR IS, SyngoDT 6, NoOfItems 6, Data '-1566   '
+39 - 'AutoAlignMatrix' VM 16, VR FL, SyngoDT 5, NoOfItems 0, Data 
+40 - 'MeasurementIndex' VM 1, VR FL, SyngoDT 5, NoOfItems 0, Data 
+41 - 'CoilString' VM 1, VR LO, SyngoDT 19, NoOfItems 6, Data 'PH1-8'
+42 - 'PATModeText' VM 1, VR LO, SyngoDT 19, NoOfItems 6, Data 'p2 '
+43 - 'PatReinPattern' VM 1, VR ST, SyngoDT 23, NoOfItems 6, Data '1;HS;93.07;31.00;2;0;2;-459390650'
+</pre>
+<p>For more example see: <a href="http://gdcm.sourceforge.net/wiki/index.php/SIEMENS_CSA_Header" title="SIEMENS CSA Header">SIEMENS CSA Header</a>
+</p>
+<h2> <span class="mw-headline" id="Protocol_Data_Block"> Protocol Data Block </span></h2>
+<p>Protocol Data Block&nbsp;: 0025,xx1b,GEMS_SERS_01
+</p>
+<pre>$ gdcmdump --pdb GE_MR_0025xx1bProtocolDataBlock.dcm
+</pre>
+<p>This tool is like ge2txt:
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="http://www.mymri.com/prot/">http://www.mymri.com/prot/</a>
+</li></ul>
+<pre>Dumping: (0025,001b)gems_sers_01
+ENTRY "Head First"
+POSITION "Supine"
+ANREF "NA"
+COIL "HEAD"
+PLANE "OBLIQUE"
+SEDESCFLAG "1"
+SEDESC "AX FSE T2"
+IMODE "2D"
+PSEQ "FSE-XL"
+IOPT "FC, EDR, TRF, Fast"
+PLUG "22"
+FILTCHOICE "None"
+BWRT "-1"
+TRICKSIMG "1"
+TAG_SPACE "7"
+TAG_TYPE "None"
+USERCV0 "0.00"
+USERCV6 "0.00"
+USERCV7 "0.00"
+USERCV21 "0.00"
+USERCV_MASK "2097344"
+TE "102.0"
+NECHO "1"
+TR "5720.0"
+NUMACQS "1"
+ETL "17"
+BPMMODE "0"
+AUTOTRGTYPE "0"
+PSDTRIG "0"
+SLICEORDER "1"
+VIEWORDER "1"
+TRREST "0"
+TRACTIVE "0"
+SLICEASSET "1.00"
+PHASEASSET "1.00"
+SEPSERIES "0"
+AUTOTRIGWIN "0"
+FOV "24.0"
+SLTHICK "2.0"
+SPC "2.0"
+GRXOPT "0"
+SLOC1 "L11.8"
+SLOC2 "P29.9"
+SLOC3 "I50.0"
+ELOC1 "L11.6"
+ELOC2 "P29.4"
+ELOC3 "S53.9"
+NOSLC "27"
+SL3PLANE "0"
+SL3PLANE1 "0"
+SL3PLANE2 "0"
+SL3PLANE3 "0"
+SPCPERPLANE1 "0.0"
+SPCPERPLANE2 "0.0"
+SPCPERPLANE3 "0.0"
+MATRIXX "448"
+MATRIXY "224"
+SWAPPF "A/P"
+NEX "4.00"
+CONTRAST "No"
+CONTAM "Yes   "
+TBLDELTA "0.00"
+PHASEFOV "0.75"
+RBW "31.25"
+AUTOSHIM "Auto"
+PHASECORR "Yes"
+FLDIR "Freq"
+NUMACCELFACTOR "1.00"
+PAUSEDELMASKACQ "1"
+NOTES ".pn/_3"
+GRIP_NUMSLGROUPS "1"
+GRIP_SLGROUP1 "-11.703952 -29.677423 1.949659 0.002380 0.004775 0.999985 0.999997 0.000175 -0.002380 0.000186 -0.999988 0.004775 27 0.000000 1 0 0"
+GRIP_SATGROUP1 "0"
+GRIP_SATGROUP2 "0"
+GRIP_SATGROUP3 "0"
+GRIP_SATGROUP4 "0"
+GRIP_SATGROUP5 "0"
+GRIP_SATGROUP6 "0"
+GRIP_TRACKER "0"
+GRIP_SPECTRO "0"
+GRIP_NUMPSCVOL "0"
+GRIP_PSCVOL1 "0"
+GRIP_PSCVOL2 "0"
+GRIP_PSCVOLFOV "0.000000"
+GRIP_PSCVOLTHICK "0.000000"
+AUTOSUBOPTIONS "0"
+AUTOSCIC "0"
+AUTOVOICE "0"
+PRESETDELAY "0.0"
+MASKPHASE "0"
+MASKPAUSE "0"
+TOTALNOSTATION "0"
+STATION "0"
+</pre>
+<p>More example at <a href="http://gdcm.sourceforge.net/wiki/index.php/Protocol_Data_Block" title="Protocol Data Block">Protocol Data Block</a>.
+</p>
+<h2> <span class="mw-headline" id="PMS.2FELSCINT1_Protocol_Information"> PMS/ELSCINT1 Protocol Information </span></h2>
+<p>PMS/ELSCINT Protocol Information&nbsp;: (01F7,26,ELSCINT1)
+</p>
+<pre>$ gdcmdump --elscint ELSCINT1_ProtocolInformation.dcm
+</pre>
+<p>This dumps information from Mx8000/Brilliance Big Bore (maybe other?) specific attributes.
+</p>
+<pre>ELSCINT1 Dumping info from tag (01f7,26,elscint1)
+ELSCINT1/Item name: []
+  ApprovedStep [yes]
+  RefSurview [1\0]
+  STD-first-img-pos [11.5]
+  current-step [yes]
+  ntimed-steps [0]
+  orig-n-slices [390]
+  protocol-file [Head_Multi_1032_usr.proc]
+  protocol-name [FACE-TRAUMA/Head/Hx]
+  protocol-path [/usr/diamond.root/spr/]
+  protocol-step [1]
+  protocol-version [2.51]
+
+ELSCINT1/Item name: [doseright]
+  ACS [n/a]
+  ACS-bed-position [0]
+  ACS-calc-mas [0]
+  ACS-iq-parameter [0]
+  ACS-learn-allowed [no]
+  ACS-water-radius [-1.000000]
+  ACS-water-radius-scan [-1]
+
+ELSCINT1/Item name: [post-scan]
+  film [no]
+  pause-window [auto]
+  plan-edit [no]
+
+ELSCINT1/Item name: [pre-scan]
+  AcqSim [Off]
+  Contrast-Agent []
+  Contrast-concentration []
+  Contrast-delay []
+  Contrast-injection-mode []
+  Contrast-injection-rate []
+  Contrast-route []
+  Contrast-volume []
+  ContrastBolusAgent [none]
+  auto-in-out [auto]
+  auto-tilt [auto]
+  been-planned [yes]
+  delay-time [0]
+  special-devices [none]
+  spr-edit [edit]
+  surview-zero-position [10269]
+
+ELSCINT1/Item name: recon
+ SubItems #0
+  FILM_auto_send [No]
+  FILM_every [1]
+  FILM_fuse [1]
+  FILM_seq_ES [0]
+  FILM_seq_param [0]
+  FILM_study_ES [0]
+  FILM_study_param [0]
+  acquisition-time [update-in-run-time]
+  adaptive-filter [no]
+  cb-pitch [no]
+  center-x-mm [0]
+  center-y-mm [0]
+  cone-beam [no]
+  ecg-phase-delay [UnTagRec]
+  enhancement [0]
+  explor [yes]
+  film [none]
+  filter [A]
+  first-image-number [0]
+  gate-delay [75]
+  graphic-zoom [1.0]
+  image-angle [0]
+  image-columns [set_by_spr]
+  image-label [xx]
+  image-matrix [512]
+  image-rows [set_by_spr]
+  image-storage [default]
+  images-per-scan [set_by_spr]
+  irs-stage [default]
+  irs-sub-stage [default]
+  labels-list [ ]
+  metal-protection [no]
+  min-n-slices [set_by_spr]
+  n-slices [2]
+  opts_irs_add_noise [no]
+  post-proc-app [none]
+  raw-storage [none]
+  recon-angle [360]
+  recon-field-of-view [500]
+  recon-first-image [set_by_spr]
+  recon-first-image-offset [0.0]
+  recon-increment [set_by_spr]
+  recon-internal-thickness [set_by_spr]
+  recon-length [set_by_spr]
+  recon-number-of-scans [set_by_spr]
+  recon-thickness [set_by_spr]
+  reconstruction [set_by_spr]
+  reconstruction-ui [concurrent]
+  sholder-correction [no]
+  step-by-step [no]
+  tag-delay [40]
+  ultra-image [no]
+  ultra-image-threshold [150]
+  use-gate [set_by_spr]
+  use-tag [set_by_spr]
+  user-cone-beam [yes]
+  view [yes]
+  weight [D]
+  window-center [0]
+  window-width [800]
+ SubItems #1
+  ACS-learn-allowed [no]
+  PositionRefIndicator []
+  SOPInstanceUID [1.2.840.113704.1.111.5412.1233054422.16111111111111111111111]
+  STD-nActualImages [390]
+  SeriesInstanceUID [1.2.840.113704.1.111.5412.1233054422.15]
+  SeriesNumber [3295]
+  adaptive-filter [no]
+  cb-pitch [no]
+  center-x-mm [0]
+  center-y-mm [10]
+  cone-beam [no]
+  ecg-phase-delay [UnTagRec]
+  enhancement [0.00]
+  explor [yes]
+  film [none]
+  filter [B]
+  first-image-number [0]
+  gate-delay [40]
+  image-angle [0.000000]
+  image-columns [512]
+  image-label []
+  image-matrix [512]
+  image-rows [512]
+  image-storage [Local]
+  images-per-scan [1]
+  irs-stage [default]
+  irs-sub-stage [default]
+  labels-list [Facial Bones]
+  metal-protection [no]
+  min-n-slices [13]
+  n-slices [390]
+  opts_irs_add_noise [no]
+  priority-boost [5]
+  priority-order [insert-last]
+  raw-storage [none]
+  recon-angle [180]
+  recon-field-of-view [255]
+  recon-first-image [11.5]
+  recon-first-image-offset [0.0]
+  recon-increment [0.6]
+  recon-internal-thickness [2{1|1} to 1{1.3}]
+  recon-length [234.7]
+  recon-number-of-scans [1]
+  recon-thickness [1.30]
+  reconstruction [concurrent]
+  reconstruction-ui [concurrent]
+  serialize-step-alignment [AB]
+  sholder-correction [no]
+  step-by-step [no]
+  tag-delay [40]
+  ultra-image [no]
+  ultra-image-threshold [150]
+  use-gate [no]
+  use-tag [no]
+  user-cone-beam [yes]
+  window-center [40]
+  window-width [400]
+
+ELSCINT1/Item name: [scan]
+  FrameOfRefUID [1.2.840.113704.1.111.5412.1233054269.3]
+  PatientPosition [HFS]
+  PositionRefIndicator [AAA]
+  ReferenceSOPInstanceUID [1.2.840.113704.1.111.3804.1233054383.3600]
+  SOPInstanceUID [1.2.840.113704.1.111.5412.1233054422.14111111111111111111111]
+  SeriesInstanceUID [1.2.840.113704.1.111.5412.1233054422.15]
+  SeriesNumber [3295]
+  Stress-amount [0]
+  Stress-drug-type []
+  Stress-time [0]
+  StressType [none]
+  angular-sampling [normal]
+  asymmetric-start-angle [no]
+  auto-evolving [none]
+  bed-speed [4.7]
+  check-sum [1426.8]
+  child-adult [adult]
+  compensator [no]
+  contrak-threshold [100]
+  contrak-trigger-type [auto]
+  current [282]
+  cycle-time [set_by_spr]
+  diameter [500.000000]
+  direction [16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
+  direction-ui [Out]
+  dlp [599.6]
+  dom [no]
+  dont-limit-center [no]
+  dose-reduction [no]
+  ecg [no]
+  ecg-dose-modulation [no]
+  ecg-fix-delay [set_by_spr]
+  ecg-modulated-dose [25.0]
+  field-of-view-max [500]
+  field-of-view-min [50]
+  first-delta [-2.227500]
+  first-image-position [11.5]
+  fluoro-increment [10]
+  flying-focal-spot [yes]
+  flying-focal-spot-lock [no]
+  focus-diameter [large]
+  head-body [head]
+  heartbeat [ ]
+  helix-thickness [2x1]
+  internal-thickness [2{1|1} to 1{1.3}]
+  last-delta [2.227500]
+  mAs [300]
+  mAs-per-slice [120]
+  max-allowed-current [330]
+  max-anode-speed [80]
+  max-n-slices [463]
+  min-n-slices [10]
+  new-series-num [yes]
+  number-of-scans [1]
+  off-line-recon [no]
+  orthogonal-surview-on [no]
+  pedal [no]
+  pedal-mode []
+  pitch [1.763]
+  radiation-dose [25.0]
+  raw-data-uid [50861]
+  raw-id [*]
+  recon-only [no]
+  requested-cycle-time [2.00]
+  resolution [standard]
+  resolution-ui [standard]
+  rotation-time [0.75]
+  rotations-per-scan [1.000000]
+  row-data-uid [set_by_study]
+  scan-angle [360]
+  scan-length [237.855000]
+  scan-mode [helix]
+  scan-time [50.61]
+  series-length [234.7]
+  sg-n-slices [set_by_spr]
+  sg-thickness [1.3]
+  slice-collimation [1.00]
+  slice-increment [0.6]
+  slices-per-scan [2]
+  special-scan-mode [normal]
+  start-angle [0.00]
+  surview-length [100]
+  surview-thickness [1]
+  swivel [0.000000]
+  sync [sync]
+  thickness [2x2.5]
+  thickness-ui [2x1]
+  tilt [0.0]
+  tilt-max [30.0]
+  tilt-min [-30.0]
+  trigger [none]
+  trigger-delay []
+  ultra-image-threshold [150]
+  use-start-angle [no]
+  view-angle [180]
+  voltage [120]
+
+ELSCINT1/Item name: [voice]
+  DuringDelay [0.0]
+  DuringFile [none]
+  DuringTime [0.0]
+  PostDelay [none]
+  PostFile [none]
+  PostTime [0.000000]
+  PreDelay [none]
+  PreFile [none]
+  PreTime [0.000000]
+  during-message-delay [0]
+  during-scan-message [x-more-seconds]
+  language [PORTUGUES]
+  post-message-delay [10]
+  post-scan-message [you-may-breathe-now]
+  pre-message-delay [10]
+  pre-scan-message [do-not-breathe]
+  voice-path [C:/usr/diamond.root/cfg/voice/]
+  voice-set-label [none]
+  voice-sets-name [none]
+</pre>
+<p>More examples at <a href="http://gdcm.sourceforge.net/wiki/index.php/ELSCINT_Protocol_Information" title="ELSCINT Protocol Information">ELSCINT Protocol Information</a>.
+<br>
+</p>
+<hr>
+<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"> <center><small>GDCM: [<a href="http://gdcm.sourceforge.net/wiki/index.php/GDCM" title="GDCM">Welcome</a> | <a href="http://gdcm.sourceforge.net/wiki/index.php/Category:GDCM" title="Category:GDCM">Site Map</a>]</small></center>
+</td></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 82/1000000
+Post-expand include size: 227/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key g137895_mediawiki:pcache:idhash:38-0!*!0!!en!*!* and timestamp 20161017164758 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://gdcm.sourceforge.net/wiki/index.php?title=Gdcmdump&amp;oldid=1585">http://gdcm.sourceforge.net/wiki/index.php?title=Gdcmdump&amp;oldid=1585</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://gdcm.sourceforge.net/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="http://gdcm.sourceforge.net/wiki/index.php/Category:Applications" title="Category:Applications">Applications</a></li><li><a href="http://gdcm.sourceforge.net/wiki/index.php/Category:GDCM" title="Category:GDCM">GDCM</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="http://gdcm.sourceforge.net/wiki/index.php?title=Special:UserLogin&amp;returnto=Gdcmdump" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://gdcm.sourceforge.net/wiki/index.php?title=Talk:Gdcmdump&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://gdcm.sourceforge.net/wiki/index.php?title=Gdcmdump&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://gdcm.sourceforge.net/wiki/index.php?title=Gdcmdump&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="http://gdcm.sourceforge.net/wiki/index.php/Gdcmdump#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://gdcm.sourceforge.net/wiki/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search GDCM Wiki [alt-shift-f]" accesskey="f" id="searchInput">			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton">			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton">					<input type="hidden" name="title" value="Special:Search">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/wiki/skins/common/images/wiki.png);" href="http://gdcm.sourceforge.net/wiki/index.php/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id="p-navigation">
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://gdcm.sourceforge.net/wiki/index.php/Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+			<li id="n-recentchanges"><a href="http://gdcm.sourceforge.net/wiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="http://gdcm.sourceforge.net/wiki/index.php/Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="http://gdcm.sourceforge.net/wiki/index.php/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://gdcm.sourceforge.net/wiki/index.php/Special:WhatLinksHere/Gdcmdump" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://gdcm.sourceforge.net/wiki/index.php/Special:RecentChangesLinked/Gdcmdump" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://gdcm.sourceforge.net/wiki/index.php/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li><a href="http://gdcm.sourceforge.net/wiki/index.php?title=Gdcmdump&amp;printable=yes" rel="alternate">Printable version</a></li>
+			<li id="t-permalink"><a href="http://gdcm.sourceforge.net/wiki/index.php?title=Gdcmdump&amp;oldid=1585" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 6 April 2011, at 15:01.</li>
+											<li id="footer-info-viewcount">This page has been accessed 8,676 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://gdcm.sourceforge.net/wiki/index.php/GDCM_Wiki:Privacy_policy" title="GDCM Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://gdcm.sourceforge.net/wiki/index.php/GDCM_Wiki:About" title="GDCM Wiki:About">About GDCM Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://gdcm.sourceforge.net/wiki/index.php/GDCM_Wiki:General_disclaimer" title="GDCM Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./Gdcmdump - GDCM Wiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script src="./Gdcmdump - GDCM Wiki_files/load(4).php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script><script src="./Gdcmdump - GDCM Wiki_files/load(5).php" type="text/javascript"></script>
+<!-- Served in 0.415 secs. -->
+	
+
+</body></html>
